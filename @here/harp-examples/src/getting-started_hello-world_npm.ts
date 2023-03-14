@@ -114,8 +114,8 @@ export namespace HelloWorldExample {
     function addVectorTileDataSource(map: MapView) {
         // snippet:harp_gl_hello_world_example_4.ts
         const omvDataSource = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            authenticationCode: apikey
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf",
+            styleSetName: "tilezen"
         });
         // end:harp_gl_hello_world_example_4.ts
 

@@ -98,16 +98,9 @@
             };
             const copyrights = [hereCopyrightInfo];
 
-            const omvDataSource = new harp.VectorTileDataSource({
-                baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-                apiFormat: harp.APIFormat.XYZOMV,
-                styleSetName: "tilezen",
-                authenticationCode: apikey,
-                authenticationMethod: {
-                    method: harp.AuthenticationMethod.QueryString,
-                    name: "apikey"
-                },
-                copyrightInfo: copyrights
+            const omvDataSource = new VectorTileDataSource({
+                url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf",
+                styleSetName: "tilezen"
             });
 
             map.addDataSource(omvDataSource);
