@@ -54,16 +54,7 @@ export namespace GlobeAtmosphereExample {
         let dataSource;
         if (dataSourceVariant === DataSourceVariant.Omv) {
             dataSource = new VectorTileDataSource({
-                baseUrl: "https://xyz.api.here.com/tiles/herebase.02",
-                apiFormat: APIFormat.XYZOMV,
-                styleSetName: "tilezen",
-                maxZoomLevel: 17,
-                authenticationCode: apikey,
-                authenticationMethod: {
-                    method: AuthenticationMethod.QueryString,
-                    name: "apikey"
-                },
-                copyrightInfo
+                url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
             });
         } else {
             dataSource = new HereWebTileDataSource({

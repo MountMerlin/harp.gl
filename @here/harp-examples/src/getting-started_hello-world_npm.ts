@@ -9,8 +9,6 @@ import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
-import { apikey } from "../config";
-
 /**
  * MapView initialization sequence enables setting all the necessary elements on a map  and returns
  * a [[MapView]] object. Looking at the function's definition:

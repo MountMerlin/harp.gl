@@ -171,8 +171,7 @@ export namespace GeoJsonExample {
         });
 
         const baseMap = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            authenticationCode: apikey
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
         });
         mapView.addDataSource(baseMap);
 

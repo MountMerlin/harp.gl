@@ -68,15 +68,7 @@ export namespace SynchronousRendering {
         });
 
         const omvDataSource = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            apiFormat: APIFormat.XYZOMV,
-            styleSetName: "tilezen",
-            authenticationCode: apikey,
-            authenticationMethod: {
-                method: AuthenticationMethod.QueryString,
-                name: "apikey"
-            },
-            copyrightInfo
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
         });
         map.addDataSource(omvDataSource);
 

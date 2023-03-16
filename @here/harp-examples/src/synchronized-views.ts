@@ -138,15 +138,7 @@ export namespace TripleViewExample {
 
     // snippet:harp_gl_multiview_tripleView_2.ts
     const xyzDataSourceParams = {
-        baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-        apiFormat: APIFormat.XYZOMV,
-        styleSetName: "tilezen",
-        authenticationCode: apikey,
-        authenticationMethod: {
-            method: AuthenticationMethod.QueryString,
-            name: "apikey"
-        },
-        copyrightInfo
+        url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
     };
     const dataSources = {
         omvDataSource1: new VectorTileDataSource(xyzDataSourceParams),

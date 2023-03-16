@@ -127,17 +127,7 @@ export namespace ElevatedGeoJsonMarkersExample {
     const mapView = initializeMapView("mapCanvas");
 
     const omvDataSource = new VectorTileDataSource({
-        baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-        apiFormat: APIFormat.XYZOMV,
-        styleSetName: "tilezen",
-        maxDataLevel: 17,
-        authenticationCode: apikey,
-        authenticationMethod: {
-            method: AuthenticationMethod.QueryString,
-            name: "apikey"
-        },
-        copyrightInfo
+        url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
     });
-
     mapView.addDataSource(omvDataSource);
 }

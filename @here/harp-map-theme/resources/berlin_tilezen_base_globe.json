@@ -23,7 +23,7 @@
         "color": "#300A00",
         "startRatio": 0.9
     },
-    "clearColor": "#87959A",
+    "clearColor": "#436981",
     "lights": [
         {
             "type": "ambient",

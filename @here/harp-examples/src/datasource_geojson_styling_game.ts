@@ -96,15 +96,7 @@ export namespace GeoJsonStylingGame {
         });
         mapView.canvas.addEventListener("contextmenu", e => e.preventDefault());
         const baseMap = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            apiFormat: APIFormat.XYZOMV,
-            styleSetName: "tilezen",
-            authenticationCode: apikey,
-            authenticationMethod: {
-                method: AuthenticationMethod.QueryString,
-                name: "apikey"
-            },
-            copyrightInfo
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
         });
         mapView.addDataSource(baseMap);
         // end:harp_gl_initmapview.ts

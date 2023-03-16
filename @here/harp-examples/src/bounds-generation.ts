@@ -204,8 +204,7 @@ export namespace BoundsExample {
 
     function addVectorTileDataSource(map: MapView) {
         const omvDataSource = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            authenticationCode: apikey
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
         });
 
         map.addDataSource(omvDataSource);

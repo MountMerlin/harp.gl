@@ -28,8 +28,8 @@ export namespace ThemesExample {
         const mapControls = new MapControls(map);
         mapControls.maxTiltAngle = 50;
 
-        const moscow = new GeoCoordinates(55.7525631, 37.6234006);
-        map.lookAt({ target: moscow, zoomLevel: 16.1, tilt: 50, heading: 300 });
+        const frankfurt = new GeoCoordinates(50.110924, 8.682127);
+        map.lookAt({ target: frankfurt, zoomLevel: 16.1, tilt: 50, heading: 300 });
         map.zoomLevel = 16.1;
 
         const ui = new MapControlsUI(mapControls, { zoomLevel: "input", projectionSwitch: true });

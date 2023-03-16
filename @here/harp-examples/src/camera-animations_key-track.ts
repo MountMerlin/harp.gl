@@ -240,9 +240,9 @@ export namespace CameraAnimationExample {
         });
 
         const omvDataSource = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            authenticationCode: apikey
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
         });
+
         mapView.addDataSource(omvDataSource);
 
         return mapView;

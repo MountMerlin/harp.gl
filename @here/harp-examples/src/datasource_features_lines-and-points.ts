@@ -226,9 +226,9 @@ export namespace LinesPointsFeaturesExample {
         CopyrightElementHandler.install("copyrightNotice", mapView);
 
         const baseMap = new VectorTileDataSource({
-            baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-            authenticationCode: apikey
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
         });
+
         mapView.addDataSource(baseMap);
 
         return mapView;
