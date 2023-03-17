@@ -6,7 +6,7 @@ Congratulations on successfully creating a harp.gl project!
 
 If you want some help getting started, check out: https://developer.here.com/tutorials/harpgl/
 
-Otherwise, see our broad range of examples: https://www.harp.gl/docs/master/examples/
+Otherwise, see our broad range of examples: https://threejs.xyzmaps.org/docs/master/examples/
 
 # Note
 

@@ -19,7 +19,7 @@ const theme = require("../resources/theme.json");
 
 import "../css/index.css";
 
-const s3Base = "https://www.harp.gl/docs/";
+const s3Base = "https://threejs.xyzmaps.org/docs/";
 
 //Update initial links to s3 base
 document.querySelector<HTMLAnchorElement>(".examples-link")!.href = s3Base + "master/examples/";

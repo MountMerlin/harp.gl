@@ -100,22 +100,22 @@ The following list shows some of the details involved in the implementation of t
 
 There are IBCT tests which are availabel internally in the @here/integration-tests repo, called `OmvMapRender`, the tests which check the fallback are called have `fallbackStyle: true` set, but this is unfortunately not public.
 
-[mapview]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.mapview-1.html
-[datasource]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.datasource-1.html
-[quadtreesearchdistanceup]: https://www.harp.gl/docs/master/doc/interfaces/harp_mapview.mapviewoptions-1.html#quadtreesearchdistanceup
-[quadtreesearchdistancedown]: https://www.harp.gl/docs/master/doc/interfaces/harp_mapview.mapviewoptions-1.html#quadtreesearchdistancedown
-[mapviewoptions]: https://www.harp.gl/docs/master/doc/interfaces/harp_mapview.mapviewoptions-1.html
-[tile]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.tile-1.html
-[frustumintersection]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.frustumintersection.html
-[visibletileset]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.visibletileset-1.html
-[datasource.isfullycovering]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.datasource-1.html#isfullycovering
-[lrucache]: https://www.harp.gl/docs/master/doc/classes/harp_lrucache.lrucache-1.html
-[datasourceoptions.allowoverlappingtiles]: https://www.harp.gl/docs/master/doc/interfaces/harp_mapview.datasourceoptions-1.html#allowoverlappingtiles
+[mapview]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.mapview-1.html
+[datasource]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.datasource-1.html
+[quadtreesearchdistanceup]: https://threejs.xyzmaps.org/docs/master/doc/interfaces/harp_mapview.mapviewoptions-1.html#quadtreesearchdistanceup
+[quadtreesearchdistancedown]: https://threejs.xyzmaps.org/docs/master/doc/interfaces/harp_mapview.mapviewoptions-1.html#quadtreesearchdistancedown
+[mapviewoptions]: https://threejs.xyzmaps.org/docs/master/doc/interfaces/harp_mapview.mapviewoptions-1.html
+[tile]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.tile-1.html
+[frustumintersection]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.frustumintersection.html
+[visibletileset]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.visibletileset-1.html
+[datasource.isfullycovering]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.datasource-1.html#isfullycovering
+[lrucache]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_lrucache.lrucache-1.html
+[datasourceoptions.allowoverlappingtiles]: https://threejs.xyzmaps.org/docs/master/doc/interfaces/harp_mapview.datasourceoptions-1.html#allowoverlappingtiles
 [implementation details]: #Implementation-Details
 [cambridge dictionary]: https://dictionary.cambridge.org/dictionary/english/fallback
-[tileobject]: https://www.harp.gl/docs/master/doc/modules/harp_mapview.html#tileobject-1
+[tileobject]: https://threejs.xyzmaps.org/docs/master/doc/modules/harp_mapview.html#tileobject-1
 [renderorder]: https://threejs.org/docs/#api/en/core/Object3D.renderOrder
 [leveloffset]: https://github.com/heremaps/harp.gl/blob/0788d89/@here/harp-mapview/lib/Tile.ts#L253
-[addgroundplane]: https://www.harp.gl/docs/master/doc/classes/harp_mapview.datasource-1.html#addgroundplane
+[addgroundplane]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.datasource-1.html#addgroundplane
 [harp-7856]: https://saeljira.it.here.com/browse/HARP-7856
-[tilekey]: https://www.harp.gl/docs/master/doc/classes/harp_geoutils.tilekey-1.html
+[tilekey]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_geoutils.tilekey-1.html

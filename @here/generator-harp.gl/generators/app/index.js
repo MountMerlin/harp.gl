@@ -93,7 +93,7 @@ module.exports = class extends Generator {
         this.log(`Thanks for creating a harp.gl app.
 - tweet your accomplishment here: https://twitter.com/intent/tweet?text=harp.gl
 - harp.gl tutorial: https://developer.here.com/tutorials/harpgl/
-- extensive list of examples: https://www.harp.gl/docs/master/examples/
+- extensive list of examples: https://threejs.xyzmaps.org/docs/master/examples/
 - contact us here: https://developer.here.com/tutorials/harpgl/#review`);
     }
 };

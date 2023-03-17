@@ -25,8 +25,8 @@ import { CUSTOM_DECODER_SERVICE_TYPE } from "../decoder/custom_decoder_defs";
  *
  * If you pan further enough left / right, you will see that the tile disappears.
  *
- * It combines part of the https://www.harp.gl/docs/master/examples/#object-picking.html and
- * https://www.harp.gl/docs/master/examples/#datasource_custom.html examples.
+ * It combines part of the https://threejs.xyzmaps.org/docs/master/examples/#object-picking.html and
+ * https://threejs.xyzmaps.org/docs/master/examples/#datasource_custom.html examples.
  * ```
  * {@link @here/harp-mapview#Tile}s that contain the geometry from another Tile need to have a
  * reference to the Tile containing the overlapping geometry, this is achieved using the

@@ -1,6 +1,6 @@
 # harp.gl website
 
-Source for [harp.gl](https://www.harp.gl) "landing" page
+Source for [harp.gl](https://threejs.xyzmaps.org) "landing" page
 
 
 ## Local testing/development
@@ -11,7 +11,7 @@ Source for [harp.gl](https://www.harp.gl) "landing" page
 
 ## Production architecture
 
-Main part of "app", Examples and docs are hosted on S3, behind Cloudfront. [harp.gl](https://www.harp.gl).
+Main part of "app", Examples and docs are hosted on S3, behind Cloudfront. [harp.gl](https://threejs.xyzmaps.org).
 
 ## Production Deployment
 

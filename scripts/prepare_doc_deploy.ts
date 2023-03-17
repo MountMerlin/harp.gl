@@ -74,7 +74,7 @@ if (isReleaseBranch) {
         }
     }
 
-    fetch("https://www.harp.gl/releases.json")
+    fetch("https://threejs.xyzmaps.org/releases.json")
         .then((res: Response) => {
             return res.json();
         })
