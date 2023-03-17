@@ -5,13 +5,19 @@
  */
 
 /** @hidden */
-export const apikey = "J0IJdYzKDYS3nHVDDEWETIqK3nAcxqW42vz7xeSq61M";
+export const apikey = "not_used";
 
 /** @hidden */
 export const copyrightInfo = [
     {
-        id: "here.com",
+        id: "xyzmaps.org",
         year: new Date().getFullYear(),
+        label: "XYZ Maps",
+        link: "https://xyzmaps.org"
+    },
+    {
+        id: "here.com",
+        year: 2021,
         label: "HERE",
         link: "https://legal.here.com/terms"
     }
