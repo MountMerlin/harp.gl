@@ -15,7 +15,6 @@ import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import * as THREE from "three";
 
-import { apikey } from "../config";
 import { COUNTRIES } from "../resources/countries";
 
 /**

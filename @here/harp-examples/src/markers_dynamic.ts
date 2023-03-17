@@ -8,15 +8,8 @@ import { FeaturesDataSource, MapViewPointFeature } from "@here/harp-features-dat
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { LongPressHandler, MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    GeoJsonDataProvider,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
+import { GeoJsonDataProvider, VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
-
-import { apikey, copyrightInfo } from "../config";
 
 /**
  * This examples shows how to render dynamically generated GeoJSON points as markers with picking

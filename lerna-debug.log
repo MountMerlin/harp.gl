@@ -297,7 +297,7 @@
 32 silly found diff in @here/harp-examples/src/datasource_geojson_styling_game.ts
 32 silly found diff in @here/harp-examples/src/datasource_geojson_visibility.ts
 32 silly found diff in @here/harp-examples/src/datasource_here-webtile.ts
-32 silly found diff in @here/harp-examples/src/datasource_here_vector_tile.ts
+32 silly found diff in @here/harp-examples/src/datasource_xyz_vector_tile.ts
 32 silly found diff in @here/harp-examples/src/datasource_satellite-tile.ts
 32 silly found diff in @here/harp-examples/src/datasource_satellite-tile_globe.ts
 32 silly found diff in @here/harp-examples/src/datasource_webtile_globe.ts
@@ -366,7 +366,7 @@
 33 verbose filtered diff   '@here/harp-examples/src/datasource_geojson_styling_game.ts',
 33 verbose filtered diff   '@here/harp-examples/src/datasource_geojson_visibility.ts',
 33 verbose filtered diff   '@here/harp-examples/src/datasource_here-webtile.ts',
-33 verbose filtered diff   '@here/harp-examples/src/datasource_here_vector_tile.ts',
+33 verbose filtered diff   '@here/harp-examples/src/datasource_xyz_vector_tile.ts',
 33 verbose filtered diff   '@here/harp-examples/src/datasource_satellite-tile.ts',
 33 verbose filtered diff   '@here/harp-examples/src/datasource_satellite-tile_globe.ts',
 33 verbose filtered diff   '@here/harp-examples/src/datasource_webtile_globe.ts',

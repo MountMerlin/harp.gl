@@ -7,13 +7,7 @@
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView, MapViewUtils } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
-
-import { apikey, copyrightInfo } from "../config";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
 /**
  * An example showing triple map view build with 3 [[MapView]]s each with a different theme and/or

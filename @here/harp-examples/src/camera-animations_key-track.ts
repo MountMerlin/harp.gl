@@ -14,8 +14,6 @@ import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
 import THREE = require("three");
 
-import { apikey } from "../config";
-
 interface GeoLocations {
     [key: string]: GeoCoordinates;
 }

@@ -9,13 +9,7 @@ import { isJsonExpr } from "@here/harp-datasource-protocol/lib/Expr";
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView, ThemeLoader } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
-
-import { apikey, copyrightInfo } from "../config";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
 export namespace HelloWorldTexturedExample {
     function main() {

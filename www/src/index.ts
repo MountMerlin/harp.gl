@@ -7,13 +7,7 @@
 import { Theme } from "@here/harp-datasource-protocol";
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { MapView, MapViewEventNames, MapViewUtils } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
-
-import { apikey, copyrightInfo } from "../../@here/harp-examples/config";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
 const theme = require("../resources/theme.json");
 

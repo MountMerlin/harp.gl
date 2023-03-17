@@ -9,8 +9,6 @@ import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
 
-import { apikey } from "../config";
-
 /**
  * This example copies the base example and adds a GUI allowing to switch between all the open-
  * sourced themes available in the repository.

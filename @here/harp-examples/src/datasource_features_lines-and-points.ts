@@ -15,7 +15,6 @@ import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
-import { apikey } from "../config";
 import { faults, hotspots } from "../resources/geology";
 
 /**

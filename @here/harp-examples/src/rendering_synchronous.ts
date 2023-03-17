@@ -5,13 +5,8 @@
  */
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { CopyrightElementHandler, MapView, MapViewEventNames } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import THREE = require("three");
-import { apikey, copyrightInfo } from "../config";
 
 /**
  * The example shows how to render map synchronously within your own render loop.

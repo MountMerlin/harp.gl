@@ -10,8 +10,6 @@ import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
-import { apikey } from "../config";
-
 /**
  * In this example we avail ourselves of the [[FeaturesDataSource]] and its `setFromGeoJson` method
  * to read GeoJSON from a file or from a textarea in the page. A default style is applied for all

@@ -7,14 +7,8 @@
 import { Feature } from "@here/harp-datasource-protocol";
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    GeoJsonDataProvider,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
+import { GeoJsonDataProvider, VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
-import { apikey, copyrightInfo } from "../config";
 import * as geojson from "../resources/italy.json";
 
 /**

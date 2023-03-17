@@ -7,14 +7,8 @@
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { LongPressHandler, MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapAnchor, MapView } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import * as THREE from "three";
-
-import { apikey, copyrightInfo } from "../config";
 
 /**
  * This example shows how we can pick the scene and add a [three.js](https://threejs.org/) object.

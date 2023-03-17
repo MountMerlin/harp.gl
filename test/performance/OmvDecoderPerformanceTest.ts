@@ -6,7 +6,6 @@
 
 import { Styles, Theme, ValueMap } from "@here/harp-datasource-protocol";
 import { MapEnv, StyleSetEvaluator } from "@here/harp-datasource-protocol/index-decoder";
-import { apikey } from "@here/harp-examples/config";
 import {
     mercatorProjection,
     sphereProjection,
@@ -204,13 +203,7 @@ createOMVDecoderPerformanceTest("theme=berlin tiles=4 region=berlin data=herebas
     theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: BERLIN_CENTER_TILES,
     omvRestClientOptions: {
-        baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-        apiFormat: APIFormat.XYZOMV,
-        authenticationCode: apikey,
-        authenticationMethod: {
-            method: AuthenticationMethod.QueryString,
-            name: "apikey"
-        }
+        url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
     }
 });
 
@@ -218,13 +211,7 @@ createOMVDecoderPerformanceTest("theme=berlin tiles=4 region=berlin data=osmbase
     theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: BERLIN_CENTER_TILES,
     omvRestClientOptions: {
-        baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-        apiFormat: APIFormat.XYZOMV,
-        authenticationCode: apikey,
-        authenticationMethod: {
-            method: AuthenticationMethod.QueryString,
-            name: "apikey"
-        }
+        url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
     }
 });
 
@@ -246,13 +233,7 @@ createOMVDecoderPerformanceTest("theme=berlin tiles=10 region=ny data=herebase",
     theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: NEW_YORK_TILES,
     omvRestClientOptions: {
-        baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-        apiFormat: APIFormat.XYZOMV,
-        authenticationCode: apikey,
-        authenticationMethod: {
-            method: AuthenticationMethod.QueryString,
-            name: "apikey"
-        }
+        url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
     }
 });
 
@@ -260,12 +241,6 @@ createOMVDecoderPerformanceTest("theme=berlin tiles=10 region=ny data=osmbase", 
     theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: NEW_YORK_TILES,
     omvRestClientOptions: {
-        baseUrl: "https://vector.hereapi.com/v2/vectortiles/base/mc",
-        apiFormat: APIFormat.XYZOMV,
-        authenticationCode: apikey,
-        authenticationMethod: {
-            method: AuthenticationMethod.QueryString,
-            name: "apikey"
-        }
+        url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
     }
 });

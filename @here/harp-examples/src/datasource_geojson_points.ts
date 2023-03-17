@@ -7,14 +7,7 @@
 import { GeoCoordinates } from "@here/harp-geoutils";
 import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    GeoJsonDataProvider,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
-
-import { apikey, copyrightInfo } from "../config";
+import { GeoJsonDataProvider, VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
 /**
  * This examples is a stress-test of tiled GeoJson perfomance, which consist of rendering 10000

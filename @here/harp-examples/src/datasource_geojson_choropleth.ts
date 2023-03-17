@@ -10,8 +10,6 @@ import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { GeoJsonDataProvider, VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import * as THREE from "three";
 
-import { apikey } from "../config";
-
 /**
  * This example demonstrates how to generate a heatmap-like [[StyleSet]] for a GeoJson. To do so,
  * each [[Style]] needs to define its own color shade, and they all need to be staggered on a

@@ -8,13 +8,7 @@ import { GeoCoordinates, TileKey } from "@here/harp-geoutils";
 import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { DataProvider } from "@here/harp-mapview-decoder";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
-
-import { apikey, copyrightInfo } from "../config";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
 /**
  * This examples shows how to render elevated GeoJSON points as markers.

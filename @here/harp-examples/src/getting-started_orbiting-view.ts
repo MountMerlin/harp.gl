@@ -10,8 +10,6 @@ import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
 import * as Stats from "stats.js";
 
-import { apikey } from "../config";
-
 /**
  * In this example we simply use the `lookAt` method to make the camera orbit around a geolocation.
  *

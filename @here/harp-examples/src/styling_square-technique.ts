@@ -8,8 +8,6 @@ import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
-import { apikey } from "../config";
-
 /**
  * A small example using the {@links SquaresTechnique} to add a pink suqare to
  * each place in the map.

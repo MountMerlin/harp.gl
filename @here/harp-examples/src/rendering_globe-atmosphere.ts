@@ -11,21 +11,9 @@ import {
     MapView,
     MapViewAtmosphere
 } from "@here/harp-mapview";
-import {
-    APIFormat,
-    AuthenticationMethod,
-    VectorTileDataSource
-} from "@here/harp-vectortile-datasource";
-import { HereTileProvider, HereWebTileDataSource } from "@here/harp-webtile-datasource";
-
-import { apikey, copyrightInfo } from "../config";
+import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 
 export namespace GlobeAtmosphereExample {
-    enum DataSourceVariant {
-        Omv,
-        Satellite
-    }
-
     // Create a new MapView for the HTMLCanvasElement of the given id.
     function initializeMapView(id: string): MapView {
         const canvas = document.getElementById(id) as HTMLCanvasElement;
@@ -47,21 +35,10 @@ export namespace GlobeAtmosphereExample {
 
     function main() {
         const map = initializeMapView("mapCanvas");
-        const dataSourceVariant = window.location.href.toLowerCase().includes("datasource=omv")
-            ? DataSourceVariant.Omv
-            : DataSourceVariant.Satellite;
 
-        let dataSource;
-        if (dataSourceVariant === DataSourceVariant.Omv) {
-            dataSource = new VectorTileDataSource({
-                url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
-            });
-        } else {
-            dataSource = new HereWebTileDataSource({
-                apikey,
-                tileBaseAddress: HereTileProvider.TILE_AERIAL_SATELLITE
-            });
-        }
+        const dataSource = new VectorTileDataSource({
+            url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
+        });
         map.addDataSource(dataSource);
 
         const mapControls = new MapControls(map);

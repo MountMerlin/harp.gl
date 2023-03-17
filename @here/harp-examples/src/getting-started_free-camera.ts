@@ -19,8 +19,6 @@ import * as THREE from "three";
 import { TrackballControls } from "three/examples/jsm/controls/TrackballControls";
 import { TransformControls } from "three/examples/jsm/controls/TransformControls";
 
-import { apikey } from "../config";
-
 /**
  * This app adds another freely moveable camera into the map view scene.
  * It can be used as a handy map inspection/debugging tool

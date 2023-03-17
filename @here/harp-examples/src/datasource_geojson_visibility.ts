@@ -13,8 +13,6 @@ import { GeoJsonDataProvider, VectorTileDataSource } from "@here/harp-vectortile
 import { VectorTileDecoder } from "@here/harp-vectortile-datasource/index-worker";
 import * as turf from "@turf/turf";
 
-import { apikey } from "../config";
-
 export namespace GeoJsonVisibilityExample {
     async function main(id: string): Promise<MapView> {
         const canvas = document.getElementById(id) as HTMLCanvasElement;

@@ -10,11 +10,8 @@ import { GeoCoordinates } from "@here/harp-geoutils";
 import { MapControls, MapControlsUI } from "@here/harp-map-controls";
 import { CopyrightElementHandler, MapView, MapViewEventNames } from "@here/harp-mapview";
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
-import { HereWebTileDataSource } from "@here/harp-webtile-datasource";
 import { GUI } from "dat.gui";
 import * as THREE from "three";
-
-import { apikey } from "../config";
 
 const SunCalc = require("suncalc");
 
@@ -62,12 +59,6 @@ function swapCamera() {
     directionalLightHelper.visible = !directionalLightHelper.visible;
     shadowCameraHelper.visible = !shadowCameraHelper.visible;
 }
-
-const hereWebTileDataSource = new HereWebTileDataSource({
-    apikey,
-    renderingOptions: { renderOrder: 50 },
-    name: "raster-tiles"
-});
 
 function setupDebugStuff() {
     const mapCameraHelper = new THREE.CameraHelper(map["m_rteCamera"]);
@@ -294,7 +285,6 @@ function addGuiElements() {
         if (rasterSource && !enable) {
             map.removeDataSource(rasterSource);
         } else if (!rasterSource && enable) {
-            map.addDataSource(hereWebTileDataSource);
         }
     });
     gui.add(guiOptions, "textureSquareSize", 256, 4096, 32).onChange(size => {

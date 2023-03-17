@@ -14,8 +14,6 @@ import {
 } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
 
-import { apikey, copyrightInfo } from "../config";
-
 /**
  * Harp's effects playground example with GUI to tweak values in one's own map. The effects are
  * adapted from ThreeJS's original effects. They can be tailored from [[MapView]]'s

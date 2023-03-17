@@ -14,8 +14,6 @@ import {
 } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
 
-import { apikey, copyrightInfo } from "../config";
-
 /**
  * Example showing how to use separate post effects JSON files to configure the rendering through
  * the `loadPostEffects` method.

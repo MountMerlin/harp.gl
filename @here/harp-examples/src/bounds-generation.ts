@@ -16,8 +16,6 @@ import { BoundsGenerator, CameraUtils, CopyrightElementHandler, MapView } from "
 import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import { GUI, GUIController } from "dat.gui";
 
-import { apikey } from "../config";
-
 export namespace BoundsExample {
     // Create a new MapView for the HTMLCanvasElement of the given id.
     function initMapView(id: string): MapView {

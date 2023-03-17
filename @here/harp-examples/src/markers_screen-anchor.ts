@@ -10,8 +10,6 @@ import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
 import { GUI } from "dat.gui";
 import THREE = require("three");
 
-import { apikey } from "../config";
-
 export namespace GeoToScreenExample {
     document.body.innerHTML += `
         <style>
