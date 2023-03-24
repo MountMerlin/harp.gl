@@ -13,4 +13,4 @@
  */
 
 export * from "./lib/WebTileDataSource";
-export * from "./lib/HereWebTileDataSource";
+export * from "./lib/XyzWebTileDataSource";
