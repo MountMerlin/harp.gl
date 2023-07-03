@@ -1,6 +1,6 @@
 {
     "include": [
-        "@here/*/{lib,src}/**/*.ts"
+        "@xyzmaps/*/{lib,src}/**/*.ts"
     ],
     "exclude": [
         "typings"

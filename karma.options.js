@@ -71,54 +71,54 @@ const options = function (isCoverage, isMapSdk, prefixDirectory) {
         // are to check its coverage. Note, the tests themselves don't count to code coverage and
         // are excluded using the karmaTypescriptConfig.coverage.exclude property.
         files: [
-            "@here/harp-datasource-protocol/**/*.ts",
-            "@here/harp-debug-datasource/**/*.ts",
-            "@here/harp-geometry/**/*.ts",
-            "@here/harp-fetch/**/*.ts",
-            "@here/harp-utils/**/*.ts",
-            "@here/harp-geoutils/**/*.ts",
-            "@here/harp-mapview/**/*.ts",
-            "@here/harp-mapview-decoder/**/*.ts",
-            "@here/harp-materials/**/*.ts",
-            "@here/harp-text-canvas/**/*.ts",
-            "@here/harp-lrucache/**/*.ts",
-            "@here/harp-transfer-manager/**/*.ts",
-            "@here/harp-lines/**/*.ts",
-            "@here/harp-test-utils/**/*.ts",
-            "@here/harp-map-controls/**/*.ts",
-            "@here/harp-olp-utils/**/*.ts",
-            "@here/harp-webtile-datasource/**/*.ts",
+            "@xyzmaps/harp-datasource-protocol/**/*.ts",
+            "@xyzmaps/harp-debug-datasource/**/*.ts",
+            "@xyzmaps/harp-geometry/**/*.ts",
+            "@xyzmaps/harp-fetch/**/*.ts",
+            "@xyzmaps/harp-utils/**/*.ts",
+            "@xyzmaps/harp-geoutils/**/*.ts",
+            "@xyzmaps/harp-mapview/**/*.ts",
+            "@xyzmaps/harp-mapview-decoder/**/*.ts",
+            "@xyzmaps/harp-materials/**/*.ts",
+            "@xyzmaps/harp-text-canvas/**/*.ts",
+            "@xyzmaps/harp-lrucache/**/*.ts",
+            "@xyzmaps/harp-transfer-manager/**/*.ts",
+            "@xyzmaps/harp-lines/**/*.ts",
+            "@xyzmaps/harp-test-utils/**/*.ts",
+            "@xyzmaps/harp-map-controls/**/*.ts",
+            "@xyzmaps/harp-olp-utils/**/*.ts",
+            "@xyzmaps/harp-webtile-datasource/**/*.ts",
             // Resources here are fetched by URL, note these require the correct proxy to be setup
             // see "proxies" below.
             {
-                pattern: "@here/harp-test-utils/test/resources/*.*",
+                pattern: "@xyzmaps/harp-test-utils/test/resources/*.*",
                 included: false
             },
             // This is needed to access the font resources when running the repo separate from the
             // sdk.
             {
-                pattern: "node_modules/@here/harp-fontcatalog/resources/**/*.*",
+                pattern: "node_modules/@xyzmaps/harp-fontcatalog/resources/**/*.*",
                 included: false
             },
             // This is needed when this repo is managed with the repo tool
             {
-                pattern: "@here/harp-text-canvas/resources/fonts/**/*.*",
+                pattern: "@xyzmaps/harp-text-canvas/resources/fonts/**/*.*",
                 included: false
             },
             {
-                pattern: "@here/harp-mapview/test/resources/*.*",
+                pattern: "@xyzmaps/harp-mapview/test/resources/*.*",
                 included: false
             },
             {
-                pattern: "@here/harp-datasource-protocol/theme.schema.json",
+                pattern: "@xyzmaps/harp-datasource-protocol/theme.schema.json",
                 included: false
             },
-            "@here/harp-vectortile-datasource/lib/adapters/omv/proto/vector_tile.js",
-            "@here/harp-vectortile-datasource/**/*.ts",
-            "@here/harp-map-theme/test/DefaultThemeTest.ts",
+            "@xyzmaps/harp-vectortile-datasource/lib/adapters/omv/proto/vector_tile.js",
+            "@xyzmaps/harp-vectortile-datasource/**/*.ts",
+            "@xyzmaps/harp-map-theme/test/DefaultThemeTest.ts",
             // These files are needed for the test above.
             {
-                pattern: "@here/harp-map-theme/resources/*.json",
+                pattern: "@xyzmaps/harp-map-theme/resources/*.json",
                 included: false
             }
         ].map(file => fixPrefix(file)),
@@ -126,9 +126,9 @@ const options = function (isCoverage, isMapSdk, prefixDirectory) {
         // Files that are to be excluded from the list included above.
         exclude: [
             "**/test/rendering/**/*.*",
-            "@here/harp-test-utils/lib/rendering/RenderingTestResultServer.ts",
-            "@here/harp-test-utils/lib/rendering/RenderingTestResultCli.ts",
-            "@here/harp-datasource-protocol/test/ThemeTypingsTest.ts",
+            "@xyzmaps/harp-test-utils/lib/rendering/RenderingTestResultServer.ts",
+            "@xyzmaps/harp-test-utils/lib/rendering/RenderingTestResultCli.ts",
+            "@xyzmaps/harp-datasource-protocol/test/ThemeTypingsTest.ts",
             "**/*.d.ts"
         ].map(file => fixPrefix(file)),
 
@@ -136,10 +136,10 @@ const options = function (isCoverage, isMapSdk, prefixDirectory) {
         // do not include tests or libraries
         // (these files will be instrumented by Istanbul)
         preprocessors: {
-            "@here/harp-vectortile-datasource/lib/adapters/omv/proto/vector_tile.js": [
+            "@xyzmaps/harp-vectortile-datasource/lib/adapters/omv/proto/vector_tile.js": [
                 "karma-typescript"
             ],
-            "@here/**/*.ts": ["karma-typescript"]
+            "@xyzmaps/**/*.ts": ["karma-typescript"]
         },
 
         // We use coverage-istanbul instead of karma-typescript because it can output json format
@@ -164,10 +164,10 @@ const options = function (isCoverage, isMapSdk, prefixDirectory) {
             // How to access the local resources, normally this would handled by webpack, but we need to
             // bundle the tests with karma-typescript, so we have to configure where the resources are,
             // by default the resources relative to the root base folder.
-            "/@here": "/base/@here",
-            "/@here/harp-fontcatalog/resources/": isMapSdk
-                ? "/base/@here/harp-text-canvas/resources/fonts/"
-                : "/base/node_modules/@here/harp-fontcatalog/resources/"
+            "/@xyzmaps": "/base/@xyzmaps",
+            "/@xyzmaps/harp-fontcatalog/resources/": isMapSdk
+                ? "/base/@xyzmaps/harp-text-canvas/resources/fonts/"
+                : "/base/node_modules/@xyzmaps/harp-fontcatalog/resources/"
         },
         karmaTypescriptConfig: {
             tsconfig: "./tsconfig.json",
@@ -187,7 +187,7 @@ const options = function (isCoverage, isMapSdk, prefixDirectory) {
                     /\.node\.ts/,
                     /index.*\.ts/,
                     /\.tsx/,
-                    /coresdk\/@here\/harp-test-utils\/lib\/rendering/
+                    /coresdk\/@xyzmaps\/harp-test-utils\/lib\/rendering/
                 ]
             },
             reports,

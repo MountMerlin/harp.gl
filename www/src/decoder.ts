@@ -10,6 +10,6 @@ declare let self: Worker & {
 
 self.importScripts("three.min.js");
 
-import { VectorTileDecoderService } from "@here/harp-vectortile-datasource/index-worker";
+import { VectorTileDecoderService } from "@xyzmaps/harp-vectortile-datasource/index-worker";
 
 VectorTileDecoderService.start();

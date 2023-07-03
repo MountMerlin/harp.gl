@@ -33,16 +33,16 @@ Take the new map component int use by replacing everytinh in app.componnent.html
 ### Install necessary `harp` modules
 
 ```bash
-npm install --save @here/harp-mapview @here/harp-omv-datasource @here/harp-map-theme @here/harp-map-controls
+npm install --save @xyzmaps/harp-mapview @xyzmaps/harp-omv-datasource @xyzmaps/harp-map-theme @xyzmaps/harp-map-controls
 
 ```
 
 You have installed 4 key components needed to render basic map:
 
--   `@here/harp-mapview` - map renderer itself
--   `@here/harp-map-controls` - map interaction like panning and tilting
--   `@here/harp-omv-datasource` - tile provider based on OMV/MVT vector tile format
--   `@here/harp-map-theme` - default theme and font resources required to render map in OMV/tilezen
+-   `@xyzmaps/harp-mapview` - map renderer itself
+-   `@xyzmaps/harp-map-controls` - map interaction like panning and tilting
+-   `@xyzmaps/harp-omv-datasource` - tile provider based on OMV/MVT vector tile format
+-   `@xyzmaps/harp-map-theme` - default theme and font resources required to render map in OMV/tilezen
     scheme
 
 ### Install matching `three.js` version
@@ -51,14 +51,14 @@ Since Three.js is a peer dependency of harp.gl it has to be installed as well. T
 that you should install you can use npm view.
 
 ```shell
-THREE=`npm view @here/harp-mapview peerDependencies.three`
+THREE=`npm view @xyzmaps/harp-mapview peerDependencies.three`
 npm install --save three@$THREE
 ```
 
 ### Import the harp mapview in the map component
 
 ```typescript
-import { MapView } from "@here/harp-mapview";
+import { MapView } from "@xyzmaps/harp-mapview";
 ```
 
 Add the harp mapview to the map component
@@ -83,7 +83,7 @@ Initialize harp in the ngOnInit method
     this.mapView = new MapView({
       canvas,
       theme:
-        'https://unpkg.com/@here/harp-map-theme/resources/berlin_tilezen_base.json',
+        'https://unpkg.com/@xyzmaps/harp-map-theme/resources/berlin_tilezen_base.json',
     });
     this.mapView.resize(window.innerWidth, window.innerHeight);
     window.addEventListener('resize', () => {
@@ -234,7 +234,7 @@ touch ./src/app/map/decoder.ts
 ```
 
 ```typescript
-import { OmvTileDecoderService, OmvTilerService } from "@here/harp-omv-datasource/index-worker";
+import { OmvTileDecoderService, OmvTilerService } from "@xyzmaps/harp-omv-datasource/index-worker";
 
 OmvTileDecoderService.start();
 OmvTilerService.start(); // Only needed for untiled geojson
@@ -285,7 +285,7 @@ Now we can finally use it in our map component:
 ```javascript
 this.mapView = new MapView({
     canvas,
-    theme: "https://unpkg.com/@here/harp-map-theme/resources/berlin_tilezen_base.json",
+    theme: "https://unpkg.com/@xyzmaps/harp-map-theme/resources/berlin_tilezen_base.json",
     decoderUrl: "./decoder.bundle.js"
 });
 ```
@@ -296,13 +296,13 @@ this.mapView = new MapView({
 +++ b/src/app/map/map.component.ts
 @@ -1,5 +1,6 @@
  import { Component, OnInit } from '@angular/core';
- import { MapView } from '@here/harp-mapview';
-+import { OmvDataSource } from '@here/harp-omv-datasource';
+ import { MapView } from '@xyzmaps/harp-mapview';
++import { OmvDataSource } from '@xyzmaps/harp-omv-datasource';
 
  @Component({
    selector: 'app-map',
 @@ -19,11 +20,17 @@ export class MapComponent implements OnInit {
-         'https://unpkg.com/@here/harp-map-theme/resources/berlin_tilezen_base.json',
+         'https://unpkg.com/@xyzmaps/harp-map-theme/resources/berlin_tilezen_base.json',
        decoderUrl: './decoder.bundle.js'
      });
 +
@@ -326,7 +326,7 @@ This is normally not what you want. Instead you want to host the resources toget
 The map theme is also a npm module so you can just install it.
 
 ```bash
-npm install --save @here/harp-map-theme
+npm install --save @xyzmaps/harp-map-theme
 ```
 
 ### Add map theme to assets
@@ -343,7 +343,7 @@ To make sure Angular will copy the map theme to resources (or host it via webpac
 +              },
 +              {
 +                "glob": "**/*",
-+                "input": "./node_modules/@here/harp-map-theme/resources",
++                "input": "./node_modules/@xyzmaps/harp-map-theme/resources",
 +                "output": "./resources"
                }
              ],
@@ -359,7 +359,7 @@ Now we can replace the (unpkg.com) url with a local one
      this.mapView = new MapView({
        canvas,
        theme:
--        'https://unpkg.com/@here/harp-map-theme/resources/berlin_tilezen_base.json',
+-        'https://unpkg.com/@xyzmaps/harp-map-theme/resources/berlin_tilezen_base.json',
 +        './resources/berlin_tilezen_base.json',
        decoderUrl: './decoder.bundle.js'
      });
@@ -370,7 +370,7 @@ Now we can replace the (unpkg.com) url with a local one
 Since a static map is quite boring you most likely also want to add some controls.
 
 ```bash
-npm install --save @here/harp-map-controls
+npm install --save @xyzmaps/harp-map-controls
 ```
 
 Extend the map component to make use of the controls
@@ -380,9 +380,9 @@ Extend the map component to make use of the controls
 +++ b/src/app/map/map.component.ts
 @@ -1,5 +1,6 @@
  import { Component, OnInit } from '@angular/core';
- import { MapView } from '@here/harp-mapview';
-+import { MapControls, MapControlsUI } from '@here/harp-map-controls';
- import { OmvDataSource } from '@here/harp-omv-datasource';
+ import { MapView } from '@xyzmaps/harp-mapview';
++import { MapControls, MapControlsUI } from '@xyzmaps/harp-map-controls';
+ import { OmvDataSource } from '@xyzmaps/harp-omv-datasource';
 
  const apikey = 'J0IJdYzKDYS3nHVDDEWETIqK3nAcxqW42vz7xeSq61M';
 @@ -36,5 +37,10 @@ export class MapComponent implements OnInit {

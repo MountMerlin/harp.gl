@@ -26,20 +26,20 @@ async function main() {
     const workspaces = JSON.parse(execSync("yarn workspaces --silent info").toString());
 
     const skipPackages: string[] = [
-        "@here/create-harp.gl-app",
-        "@here/generator-harp.gl",
-        "@here/harp-atlas-tools",
-        "@here/harp-test-utils",
-        "@here/harp-theme-tools",
-        "@here/harp-webpack-utils",
-        "@here/harp.gl",
-        "@here/harp-website",
-        "@here/harp-performance-tests",
-        "@here/harp-rendering-test",
-        "@here/harp-examples",
+        "@xyzmaps/create-harp.gl-app",
+        "@xyzmaps/generator-harp.gl",
+        "@xyzmaps/harp-atlas-tools",
+        "@xyzmaps/harp-test-utils",
+        "@xyzmaps/harp-theme-tools",
+        "@xyzmaps/harp-webpack-utils",
+        "@xyzmaps/harp.gl",
+        "@xyzmaps/harp-website",
+        "@xyzmaps/harp-performance-tests",
+        "@xyzmaps/harp-rendering-test",
+        "@xyzmaps/harp-examples",
 
-        "@here/harp-lines",
-        "@here/harp-map-theme"
+        "@xyzmaps/harp-lines",
+        "@xyzmaps/harp-map-theme"
     ];
 
     const packages = Object.keys(workspaces).filter(p => !skipPackages.includes(p));

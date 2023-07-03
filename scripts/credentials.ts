@@ -8,7 +8,7 @@
 
 import * as fs from "fs";
 
-import { apikey } from "../@here/harp-examples/config";
+import { apikey } from "../@xyzmaps/harp-examples/config";
 
 function usage() {
     console.log(`Usage: ${process.argv[1]} targetDir`);

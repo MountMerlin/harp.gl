@@ -1,17 +1,8 @@
-# HERE is stopping its engagement on Harp.gl starting 03/01/2022 in favour of a fully productised and production-grade integration of the harp.gl rendering engine into HERE Maps API for JavaScript (https://developer.here.com/develop/javascript-api) All 3D features and many more will be offered via HERE Maps API for JavaScript moving forward.
+# XYZ maps three.js map renderer (aka harp.gl)
 
-
-
-
-# harp.gl
-
-[![CI](https://github.com/heremaps/harp.gl/actions/workflows/ci.yaml/badge.svg?branch=master)](https://github.com/heremaps/harp.gl/actions/workflows/ci.yaml?query=branch%3Amaster++) [![codecov](https://codecov.io/gh/heremaps/harp.gl/branch/master/graph/badge.svg)](https://codecov.io/gh/heremaps/harp.gl) [![twitter](https://img.shields.io/badge/tweet-harp.gl-blue)](https://twitter.com/intent/tweet?text=harp.gl)
-
-`harp.gl` is an _experimental and work in progress_ open-source 3D map rendering engine written in [TypeScript](https://github.com/microsoft/TypeScript).
-
-### [harp.gl site](https://threejs.xyzmaps.org/)
-
-### [harp.gl Slack channel](https://heredev.slack.com/messages/harpgl/) Registration available [here](http://t.her.is/slack).
+XYZ maps three.js (previously known as `harp.gl`) is an _experimental_ open-source 3D map rendering engine
+built on  [three.js](https://threejs.org). This open source version doesn't rely on access to
+proprietary APIs and services.
 
 ## Overview
 
@@ -30,24 +21,16 @@ that can display a map using our default style. You can get results like the one
 
 ## Getting started with harp.gl
 
-There are three methods to get up and running with harp.gl quickly, in order of difficulty:
-
-1. Using the [yeoman generator](https://developer.here.com/tutorials/harpgl/#method-1-using-the-harp.gl-yeoman-generator-beginner).
-1. linking a [simple bundle as a `<script>` tag in your html](https://developer.here.com/tutorials/harpgl/#method-2-linking-a-single-script-bundle-to-your-html-intermediate)
-1. installing a [set of node modules from npm](https://github.com/heremaps/harp.gl/blob/master/docs/GettingStartedGuide.md#integrate)
+(TDB - will be updated to reflect transition to XYZ maps)
 
 If you want to learn more about the applications you can create, please check the [Getting Started Guide](docs/GettingStartedGuide.md).
-
-## Authentication
-
-Regardless of how you structure your project, you need some means to authenticate, please see the [following guide](https://developer.here.com/tutorials/harpgl/#acquire-credentials) to generate a token.
 
 ## About This Repository
 
 This repository is a monorepo containing the core components of `harp.gl`,
 organized in a `yarn workspace`.
 
-All components can be used stand-alone and are in the `@here` subdirectory.
+All components can be used stand-alone and are in the `@xyzmaps` subdirectory.
 
 ## Installation
 
@@ -56,11 +39,11 @@ All components can be used stand-alone and are in the `@here` subdirectory.
 All `harp.gl` modules are installable via yarn (or npm):
 
 ```sh
-yarn add @here/harp-mapview
+yarn add @xyzmaps/harp-mapview
 ```
 
 ```sh
-npm install @here/harp-mapview
+npm install @xyzmaps/harp-mapview
 ```
 
 ### In Browser
@@ -201,10 +184,11 @@ It will output all documentation under `/dist/doc`.
 
 ## License
 
+Copyright (C) 2023- XYZ maps contributors
+
 Copyright (C) 2017-2021 HERE Europe B.V.
 
 See the [LICENSE](./LICENSE) file in the root of this project for license details about using `harp.gl`.
 
-In addition, please note that the [fonts](https://github.com/heremaps/harp-fontcatalog) are under a different set of licenses.
+In addition, please note that the [fonts](https://github.com/xyzmaps/harp-fontcatalog) are under a different set of licenses.
 
-For other use cases not listed in the license terms, please [contact us](https://developer.here.com/contact-us).

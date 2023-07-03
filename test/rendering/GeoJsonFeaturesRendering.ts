@@ -9,9 +9,9 @@ import {
     SolidLineTechniqueParams,
     Style,
     Theme
-} from "@here/harp-datasource-protocol";
-import { GeoPointLike } from "@here/harp-geoutils";
-import { LookAtParams } from "@here/harp-mapview";
+} from "@xyzmaps/harp-datasource-protocol";
+import { GeoPointLike } from "@xyzmaps/harp-geoutils";
+import { LookAtParams } from "@xyzmaps/harp-mapview";
 import * as turf from "@turf/turf";
 import { assert } from "chai";
 import * as THREE from "three";

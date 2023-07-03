@@ -3,15 +3,15 @@
  * Licensed under Apache 2.0, see full license in LICENSE
  * SPDX-License-Identifier: Apache-2.0
  */
-import { GeoJson, Theme } from "@here/harp-datasource-protocol";
-import { GeoJsonDataProvider } from "@here/harp-geojson-datasource";
-import { Projection } from "@here/harp-geoutils";
-import { LookAtParams, MapView, MapViewEventNames } from "@here/harp-mapview";
-import { DataProvider } from "@here/harp-mapview-decoder";
-import { GeoJsonTiler } from "@here/harp-mapview-decoder/index-worker";
-import { RenderingTestHelper, waitForEvent } from "@here/harp-test-utils";
-import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
-import { VectorTileDecoder } from "@here/harp-vectortile-datasource/index-worker";
+import { GeoJson, Theme } from "@xyzmaps/harp-datasource-protocol";
+import { GeoJsonDataProvider } from "@xyzmaps/harp-geojson-datasource";
+import { Projection } from "@xyzmaps/harp-geoutils";
+import { LookAtParams, MapView, MapViewEventNames } from "@xyzmaps/harp-mapview";
+import { DataProvider } from "@xyzmaps/harp-mapview-decoder";
+import { GeoJsonTiler } from "@xyzmaps/harp-mapview-decoder/index-worker";
+import { RenderingTestHelper, waitForEvent } from "@xyzmaps/harp-test-utils";
+import { VectorTileDataSource } from "@xyzmaps/harp-vectortile-datasource";
+import { VectorTileDecoder } from "@xyzmaps/harp-vectortile-datasource/index-worker";
 import * as sinon from "sinon";
 
 export interface GeoJsonDataSourceTestOptions {

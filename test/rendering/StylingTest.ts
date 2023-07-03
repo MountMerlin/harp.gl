@@ -21,15 +21,15 @@ import {
     TextureCoordinateType,
     Theme,
     Value
-} from "@here/harp-datasource-protocol";
-import { FeaturesDataSource } from "@here/harp-features-datasource";
-import { GeoBox, OrientedBox3, ProjectionType } from "@here/harp-geoutils";
-import { LookAtParams, MapAnchor, MapView, MapViewEventNames } from "@here/harp-mapview";
-import { GeoJsonTiler } from "@here/harp-mapview-decoder/index-worker";
-import { getPlatform, RenderingTestHelper, TestOptions, waitForEvent } from "@here/harp-test-utils";
-import { getReferenceImageUrl } from "@here/harp-test-utils/lib/rendering/ReferenceImageLocator";
-import { getOptionValue } from "@here/harp-utils";
-import { VectorTileDecoder } from "@here/harp-vectortile-datasource/index-worker";
+} from "@xyzmaps/harp-datasource-protocol";
+import { FeaturesDataSource } from "@xyzmaps/harp-features-datasource";
+import { GeoBox, OrientedBox3, ProjectionType } from "@xyzmaps/harp-geoutils";
+import { LookAtParams, MapAnchor, MapView, MapViewEventNames } from "@xyzmaps/harp-mapview";
+import { GeoJsonTiler } from "@xyzmaps/harp-mapview-decoder/index-worker";
+import { getPlatform, RenderingTestHelper, TestOptions, waitForEvent } from "@xyzmaps/harp-test-utils";
+import { getReferenceImageUrl } from "@xyzmaps/harp-test-utils/lib/rendering/ReferenceImageLocator";
+import { getOptionValue } from "@xyzmaps/harp-utils";
+import { VectorTileDecoder } from "@xyzmaps/harp-vectortile-datasource/index-worker";
 import { assert } from "chai";
 import * as THREE from "three";
 

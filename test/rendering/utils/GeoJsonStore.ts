@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { TileKey, webMercatorTilingScheme } from "@here/harp-geoutils";
-import { DataProvider } from "@here/harp-mapview-decoder";
+import { TileKey, webMercatorTilingScheme } from "@xyzmaps/harp-geoutils";
+import { DataProvider } from "@xyzmaps/harp-mapview-decoder";
 import RBush from "geojson-rbush";
 
 /**
- * A simple {@link @here/harp-mapview-decoder/DataProvider} that organizes GeoJson features using an rtree.
+ * A simple {@link @xyzmaps/harp-mapview-decoder/DataProvider} that organizes GeoJson features using an rtree.
  *
- * The `GeoJsonStore` can be used as a {@link @here/harp-mapview-decoder/DataProvider}
- * of {@link @here/harp-vectortile-datasource/VectorTileDataSource}s.
+ * The `GeoJsonStore` can be used as a {@link @xyzmaps/harp-mapview-decoder/DataProvider}
+ * of {@link @xyzmaps/harp-vectortile-datasource/VectorTileDataSource}s.
  *
  * @example
  * ```typescript

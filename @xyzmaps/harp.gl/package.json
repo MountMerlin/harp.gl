@@ -1,0 +1,65 @@
+{
+    "name": "@xyzmaps/harp.gl",
+    "version": "0.5.0",
+    "description": "JS Bundle containing all the functionality needed to render a map with harp.gl",
+    "keywords": [
+        "map",
+        "map-renderer",
+        "vector-tiles",
+        "geojson",
+        "typescript",
+        "webgl",
+        "harpgl"
+    ],
+    "main": "dist/harp.js",
+    "types": "dist/harp.d.ts",
+    "scripts": {
+        "prepare": "webpack && NODE_ENV=production webpack",
+        "prepack": "yarn build-typings",
+        "profile-min": "NODE_ENV=production webpack --profile --json > webpack-stats-production.json",
+        "profile-dev": "webpack --profile --json > webpack-stats-dev.json",
+        "build-typings": "tsc --build && api-extractor run && echo 'export as namespace harp;' >> dist/harp.d.ts",
+        "test": "true"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xyzmaps/harp.gl.git"
+    },
+    "author": {
+        "name": "HERE Europe B.V.",
+        "url": "https://here.com"
+    },
+    "license": "Apache-2.0",
+    "dependencies": {
+        "three": "^0.129.0"
+    },
+    "devDependencies": {
+        "@xyzmaps/harp-datasource-protocol": "^0.28.0",
+        "@xyzmaps/harp-debug-datasource": "^0.28.0",
+        "@xyzmaps/harp-features-datasource": "^0.28.0",
+        "@xyzmaps/harp-geojson-datasource": "^0.28.0",
+        "@xyzmaps/harp-geoutils": "^0.28.0",
+        "@xyzmaps/harp-lines": "^0.28.0",
+        "@xyzmaps/harp-lrucache": "^0.28.0",
+        "@xyzmaps/harp-map-controls": "^0.28.0",
+        "@xyzmaps/harp-mapview": "^0.28.0",
+        "@xyzmaps/harp-mapview-decoder": "^0.28.0",
+        "@xyzmaps/harp-materials": "^0.28.0",
+        "@xyzmaps/harp-omv-datasource": "^0.28.0",
+        "@xyzmaps/harp-test-utils": "^0.28.0",
+        "@xyzmaps/harp-text-canvas": "^0.28.0",
+        "@xyzmaps/harp-utils": "^0.28.0",
+        "@xyzmaps/harp-vectortile-datasource": "^0.28.0",
+        "@xyzmaps/harp-webtile-datasource": "^0.28.0",
+        "@microsoft/api-extractor": "^7.36.0",
+        "@types/three": "^0.129.0",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.1.6",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-merge": "^5.9.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

@@ -3,30 +3,30 @@
 #
 # This test checks if `npm` packages we are about to publish to `npmjs.org`
 # actually work with sample client application - where this application is
-# just output of our `yo @here/harp.gl`.
+# just output of our `yo @xyzmaps/harp.gl`.
 #
 set -e
 
 # direct and indirect harp.gl dependencies of our test app
 # (TODO, read it from package.json)
 packages="\
-    @here/harp-datasource-protocol \
-    @here/harp-fetch \
-    @here/harp-geometry \
-    @here/harp-geoutils \
-    @here/harp-lines \
-    @here/harp-lrucache \
-    @here/harp-map-controls \
-    @here/harp-map-theme \
-    @here/harp-mapview \
-    @here/harp-mapview-decoder \
-    @here/harp-materials \
-    @here/harp-vectortile-datasource \
-    @here/harp-omv-datasource \
-    @here/harp-text-canvas \
-    @here/harp-transfer-manager \
-    @here/harp-utils \
-    @here/harp-webpack-utils"
+    @xyzmaps/harp-datasource-protocol \
+    @xyzmaps/harp-fetch \
+    @xyzmaps/harp-geometry \
+    @xyzmaps/harp-geoutils \
+    @xyzmaps/harp-lines \
+    @xyzmaps/harp-lrucache \
+    @xyzmaps/harp-map-controls \
+    @xyzmaps/harp-map-theme \
+    @xyzmaps/harp-mapview \
+    @xyzmaps/harp-mapview-decoder \
+    @xyzmaps/harp-materials \
+    @xyzmaps/harp-vectortile-datasource \
+    @xyzmaps/harp-omv-datasource \
+    @xyzmaps/harp-text-canvas \
+    @xyzmaps/harp-transfer-manager \
+    @xyzmaps/harp-utils \
+    @xyzmaps/harp-webpack-utils"
 
 
 # ensure we have clean environment before and after test
@@ -34,7 +34,7 @@ rootDir=`pwd`
 exampleDir=harp.gl-example
 function cleanup() {
     cd $rootDir
-    rm -f @here/*/*.tgz
+    rm -f @xyzmaps/*/*.tgz
     rm -fr $exampleDir
 }
 trap cleanup EXIT
@@ -50,7 +50,7 @@ for package in $packages ; do
 done
 
 # generate test app using our local packages
-yes "" | HARP_PACKAGE_ROOT="../" npm init @here/harpgl-app
+yes "" | HARP_PACKAGE_ROOT="../" npm init @xyzmaps/harpgl-app
 cd $exampleDir
 
 set +x

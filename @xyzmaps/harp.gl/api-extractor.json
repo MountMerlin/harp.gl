@@ -1,0 +1,81 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+
+    "mainEntryPointFilePath": "<projectFolder>/lib/index.d.ts",
+
+    "bundledPackages": [
+        "@xyzmaps/harp-datasource-protocol",
+        "@xyzmaps/harp-debug-datasource",
+        "@xyzmaps/harp-features-datasource",
+        "@xyzmaps/harp-geojson-datasource",
+        "@xyzmaps/harp-geoutils",
+        "@xyzmaps/harp-map-controls",
+        "@xyzmaps/harp-mapview",
+        "@xyzmaps/harp-mapview-decoder",
+        "@xyzmaps/harp-vectortile-datasource",
+        "@xyzmaps/harp-omv-datasource",
+        "@xyzmaps/harp-webtile-datasource",
+        "@xyzmaps/harp-text-canvas",
+        "@xyzmaps/harp-utils",
+        "@xyzmaps/harp-transfer-manager",
+        "@xyzmaps/harp-lines"
+    ],
+
+    "apiReport": {
+        "enabled": false
+    },
+
+    "docModel": {
+        "enabled": false
+    },
+
+    "dtsRollup": {
+        "enabled": true,
+        "untrimmedFilePath": "dist/harp.d.ts"
+    },
+
+    "tsdocMetadata": {
+        "enabled": false
+    },
+
+    "newlineKind": "lf",
+
+    "messages": {
+        "compilerMessageReporting": {
+            "default": {
+                "logLevel": "none"
+            }
+        },
+
+        "extractorMessageReporting": {
+            "default": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+
+            "ae-missing-release-tag": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-forgotten-export": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-internal-missing-underscore": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-incompatible-release-tags": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            }
+        },
+
+        "tsdocMessageReporting": {
+            "default": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            }
+        }
+    }
+}

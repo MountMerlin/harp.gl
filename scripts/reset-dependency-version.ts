@@ -33,7 +33,7 @@ if (newPackageVersion === undefined) {
     process.exit(1);
 }
 
-const packageFiles = glob.sync(__dirname + "/../@here/*/package.json");
+const packageFiles = glob.sync(__dirname + "/../@xyzmaps/*/package.json");
 packageFiles.push(__dirname + "/../package.json");
 
 /* Bump all dependencies */

@@ -3,8 +3,8 @@
  * Licensed under Apache 2.0, see full license in LICENSE
  * SPDX-License-Identifier: Apache-2.0
  */
-import { getStyles, ImageTexture, Light, Style, Theme } from "@here/harp-datasource-protocol";
-import { getAppBaseUrl, resolveReferenceUri } from "@here/harp-utils";
+import { getStyles, ImageTexture, Light, Style, Theme } from "@xyzmaps/harp-datasource-protocol";
+import { getAppBaseUrl, resolveReferenceUri } from "@xyzmaps/harp-utils";
 
 //    Mocha discourages using arrow functions, see https://mochajs.org/#arrow-functions
 

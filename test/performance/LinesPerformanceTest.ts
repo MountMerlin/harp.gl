@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { mercatorProjection } from "@here/harp-geoutils";
-import { createLineGeometry } from "@here/harp-lines";
-import { measureThroughputSync } from "@here/harp-test-utils/lib/ProfileHelper";
+import { mercatorProjection } from "@xyzmaps/harp-geoutils";
+import { createLineGeometry } from "@xyzmaps/harp-lines";
+import { measureThroughputSync } from "@xyzmaps/harp-test-utils/lib/ProfileHelper";
 import * as THREE from "three";
 
 if (typeof window === "undefined") {

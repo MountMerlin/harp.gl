@@ -24,7 +24,7 @@ else
 fi
 
 npx ts-node -- ./scripts/with-http-server.ts \
-    -r ../@here/harp-test-utils/lib/rendering/RenderingTestResultServer.ts \
+    -r ../@xyzmaps/harp-test-utils/lib/rendering/RenderingTestResultServer.ts \
     -C dist/test \
     -p 7777 \
     -- \

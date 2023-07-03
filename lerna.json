@@ -1,6 +1,6 @@
 {
     "packages": [
-        "@here/*"
+        "@xyzmaps/*"
     ],
     "version": "0.28.0",
     "npmClient": "yarn",

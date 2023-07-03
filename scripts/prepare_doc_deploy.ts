@@ -61,7 +61,7 @@ if (isReleaseBranch) {
     const now = new Date();
     // WARNING, dates are 0 indexed, hence +1
     const dateString = `${now.getDate()}-${now.getMonth() + 1}-${now.getFullYear()}`;
-    const allPackages = glob.sync("@here/*/package.json");
+    const allPackages = glob.sync("@xyzmaps/*/package.json");
     const newRelease: Release = {
         date: dateString,
         hash: commitHash,

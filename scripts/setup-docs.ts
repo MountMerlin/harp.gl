@@ -62,7 +62,7 @@ mkpath.sync(distDocsOutDir);
 function extractCodeSnippets() {
     console.log("Extracting code snippets...");
 
-    const sourceFiles = glob.sync(sdkDir + "/@here/verity-examples/**/*.{ts,tsx,html}");
+    const sourceFiles = glob.sync(sdkDir + "/@xyzmaps/verity-examples/**/*.{ts,tsx,html}");
 
     const snippetRegex = /snippet:(\S+).*$([\s\S]*)^.*end:\1/gm;
 

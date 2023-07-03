@@ -3,7 +3,7 @@
  * Licensed under Apache 2.0, see full license in LICENSE
  * SPDX-License-Identifier: Apache-2.0
  */
-import { Projection, sphereProjection } from "@here/harp-geoutils";
+import { Projection, sphereProjection } from "@xyzmaps/harp-geoutils";
 import {
     CopyrightInfo,
     LookAtParams,
@@ -11,9 +11,9 @@ import {
     MapViewEventNames,
     TextureLoader,
     Tile
-} from "@here/harp-mapview";
-import { RenderingTestHelper, waitForEvent } from "@here/harp-test-utils";
-import { WebTileDataSource, WebTileDataSourceOptions } from "@here/harp-webtile-datasource";
+} from "@xyzmaps/harp-mapview";
+import { RenderingTestHelper, waitForEvent } from "@xyzmaps/harp-test-utils";
+import { WebTileDataSource, WebTileDataSourceOptions } from "@xyzmaps/harp-webtile-datasource";
 
 //    Mocha discourages using arrow functions, see https://mochajs.org/#arrow-functions
 

@@ -1,5 +1,5 @@
 {
-    "name": "@here/harp-rendering-test",
+    "name": "@xyzmaps/harp-rendering-test",
     "version": "0.28.0",
     "private": true,
     "author": {
@@ -7,16 +7,16 @@
         "url": "https://here.com"
     },
     "devDependencies": {
-        "@here/harp-datasource-protocol": "^0.28.0",
-        "@here/harp-debug-datasource": "^0.28.0",
-        "@here/harp-features-datasource": "^0.28.0",
-        "@here/harp-geojson-datasource": "^0.28.0",
-        "@here/harp-geoutils": "^0.28.0",
-        "@here/harp-mapview": "^0.28.0",
-        "@here/harp-mapview-decoder": "^0.28.0",
-        "@here/harp-test-utils": "^0.28.0",
-        "@here/harp-utils": "^0.28.0",
-        "@here/harp-vectortile-datasource": "^0.28.0",
+        "@xyzmaps/harp-datasource-protocol": "^0.28.0",
+        "@xyzmaps/harp-debug-datasource": "^0.28.0",
+        "@xyzmaps/harp-features-datasource": "^0.28.0",
+        "@xyzmaps/harp-geojson-datasource": "^0.28.0",
+        "@xyzmaps/harp-geoutils": "^0.28.0",
+        "@xyzmaps/harp-mapview": "^0.28.0",
+        "@xyzmaps/harp-mapview-decoder": "^0.28.0",
+        "@xyzmaps/harp-test-utils": "^0.28.0",
+        "@xyzmaps/harp-utils": "^0.28.0",
+        "@xyzmaps/harp-vectortile-datasource": "^0.28.0",
         "@types/chai": "^4.2.14",
         "@types/three": "^0.129.0",
         "chai": "^4.2.0",

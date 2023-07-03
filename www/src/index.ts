@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Theme } from "@here/harp-datasource-protocol";
-import { GeoCoordinates } from "@here/harp-geoutils";
-import { MapView, MapViewEventNames, MapViewUtils } from "@here/harp-mapview";
-import { VectorTileDataSource } from "@here/harp-vectortile-datasource";
+import { Theme } from "@xyzmaps/harp-datasource-protocol";
+import { GeoCoordinates } from "@xyzmaps/harp-geoutils";
+import { MapView, MapViewEventNames, MapViewUtils } from "@xyzmaps/harp-mapview";
+import { VectorTileDataSource } from "@xyzmaps/harp-vectortile-datasource";
 
 const theme = require("../resources/theme.json");
 

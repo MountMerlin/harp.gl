@@ -3,7 +3,7 @@ excludes:
   - pattern: "test/**"
     reason: "TEST_OF"
     comment: "Directory is only used for testing. Not included in released artifacts."
-  - pattern: "@here/*/test/**"
+  - pattern: "@xyzmaps/*/test/**"
     reason: "TEST_OF"
     comment: "Directory is only used for testing. Not included in released artifacts."
   scopes:

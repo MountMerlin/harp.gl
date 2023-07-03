@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { FeatureCollection, Style } from "@here/harp-datasource-protocol";
-import { EarthConstants, sphereProjection } from "@here/harp-geoutils";
+import { FeatureCollection, Style } from "@xyzmaps/harp-datasource-protocol";
+import { EarthConstants, sphereProjection } from "@xyzmaps/harp-geoutils";
 
 import { GeoJsonTest } from "./utils/GeoJsonTest";
 import { ThemeBuilder } from "./utils/ThemeBuilder";

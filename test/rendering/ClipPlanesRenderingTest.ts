@@ -3,9 +3,9 @@
  * Licensed under Apache 2.0, see full license in LICENSE
  * SPDX-License-Identifier: Apache-2.0
  */
-import { FeatureCollection, Styles } from "@here/harp-datasource-protocol";
-import { mercatorProjection, Projection, sphereProjection } from "@here/harp-geoutils";
-import { CameraUtils } from "@here/harp-mapview";
+import { FeatureCollection, Styles } from "@xyzmaps/harp-datasource-protocol";
+import { mercatorProjection, Projection, sphereProjection } from "@xyzmaps/harp-geoutils";
+import { CameraUtils } from "@xyzmaps/harp-mapview";
 import * as THREE from "three";
 
 import { GeoJsonTest } from "./utils/GeoJsonTest";

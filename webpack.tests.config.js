@@ -12,7 +12,7 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
-const testResourceDirs = glob.sync(path.join(__dirname, "@here/*/test/resources"));
+const testResourceDirs = glob.sync(path.join(__dirname, "@xyzmaps/*/test/resources"));
 const testResources = testResourceDirs.map(dir => {
     return {
         from: dir,
@@ -20,14 +20,14 @@ const testResources = testResourceDirs.map(dir => {
     };
 });
 
-const harpMapThemePath = path.dirname(require.resolve("@here/harp-map-theme/package.json"));
+const harpMapThemePath = path.dirname(require.resolve("@xyzmaps/harp-map-theme/package.json"));
 const harpDataSourceProtocolPath = path.dirname(
-    require.resolve("@here/harp-datasource-protocol/package.json")
+    require.resolve("@xyzmaps/harp-datasource-protocol/package.json")
 );
-const harpFontResourcesPath = path.dirname(require.resolve("@here/harp-fontcatalog/package.json"));
+const harpFontResourcesPath = path.dirname(require.resolve("@xyzmaps/harp-fontcatalog/package.json"));
 
 const allTests = [
-    ...glob.sync("@here/*/test/**/*.ts"),
+    ...glob.sync("@xyzmaps/*/test/**/*.ts"),
     ...glob.sync("./test/performance/**/*.ts"),
     ...glob.sync("./test/rendering/*.ts")
 ];
@@ -93,10 +93,10 @@ const browserTestsConfig = {
                 ...testResources,
                 {
                     // DefaultThemeTest is expecting the themes to be in:
-                    // http://localhost:8080/@here/harp-map-theme/resources/berlin_*.json
+                    // http://localhost:8080/@xyzmaps/harp-map-theme/resources/berlin_*.json
                     // FIXME: CopyWebpackPlugin is not properly handling absolute path on Windows
                     // from: path.join(harpMapThemePath, "resources/berlin*.json"),
-                    from: "@here/harp-map-theme/resources/berlin_*.json",
+                    from: "@xyzmaps/harp-map-theme/resources/berlin_*.json",
                     toType: "dir"
                 },
                 {
@@ -106,12 +106,12 @@ const browserTestsConfig = {
                 },
                 {
                     from: path.join(harpDataSourceProtocolPath, "theme.schema.json"),
-                    to: "./@here/harp-datasource-protocol",
+                    to: "./@xyzmaps/harp-datasource-protocol",
                     toType: "dir"
                 },
                 {
                     from: path.join(harpFontResourcesPath, "resources"),
-                    to: "@here/harp-fontcatalog/resources"
+                    to: "@xyzmaps/harp-fontcatalog/resources"
                 },
                 {
                     from: "./test/resources/",
@@ -140,7 +140,7 @@ const browserTestsConfig = {
         before: function(app) {
             require("ts-node/register");
 
-            const RenderingTestResultServer = require("./@here/harp-test-utils/lib/rendering/RenderingTestResultServer");
+            const RenderingTestResultServer = require("./@xyzmaps/harp-test-utils/lib/rendering/RenderingTestResultServer");
             const basePath = "./rendering-test-results/";
             RenderingTestResultServer.installMiddleware(app, basePath);
         },

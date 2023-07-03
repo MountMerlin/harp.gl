@@ -4,31 +4,31 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Styles, Theme, ValueMap } from "@here/harp-datasource-protocol";
-import { MapEnv, StyleSetEvaluator } from "@here/harp-datasource-protocol/index-decoder";
+import { Styles, Theme, ValueMap } from "@xyzmaps/harp-datasource-protocol";
+import { MapEnv, StyleSetEvaluator } from "@xyzmaps/harp-datasource-protocol/index-decoder";
 import {
     mercatorProjection,
     sphereProjection,
     TileKey,
     webMercatorProjection
-} from "@here/harp-geoutils";
-import { ThemeLoader } from "@here/harp-mapview";
-import { getTestResourceUrl } from "@here/harp-test-utils/index.node";
-import { measurePerformanceSync } from "@here/harp-test-utils/lib/ProfileHelper";
+} from "@xyzmaps/harp-geoutils";
+import { ThemeLoader } from "@xyzmaps/harp-mapview";
+import { getTestResourceUrl } from "@xyzmaps/harp-test-utils/index.node";
+import { measurePerformanceSync } from "@xyzmaps/harp-test-utils/lib/ProfileHelper";
 import {
     APIFormat,
     AuthenticationMethod,
     OmvRestClient,
     OmvRestClientParameters
-} from "@here/harp-vectortile-datasource";
-import { OmvDataAdapter } from "@here/harp-vectortile-datasource/lib/adapters/omv/OmvDataAdapter";
-import { DecodeInfo } from "@here/harp-vectortile-datasource/lib/DecodeInfo";
+} from "@xyzmaps/harp-vectortile-datasource";
+import { OmvDataAdapter } from "@xyzmaps/harp-vectortile-datasource/lib/adapters/omv/OmvDataAdapter";
+import { DecodeInfo } from "@xyzmaps/harp-vectortile-datasource/lib/DecodeInfo";
 import {
     IGeometryProcessor,
     ILineGeometry,
     IPolygonGeometry
-} from "@here/harp-vectortile-datasource/lib/IGeometryProcessor";
-import { VectorTileDataProcessor } from "@here/harp-vectortile-datasource/lib/VectorTileDecoder";
+} from "@xyzmaps/harp-vectortile-datasource/lib/IGeometryProcessor";
+import { VectorTileDataProcessor } from "@xyzmaps/harp-vectortile-datasource/lib/VectorTileDecoder";
 import { assert } from "chai";
 
 if (typeof window === "undefined") {
@@ -200,7 +200,7 @@ export function createOMVDecoderPerformanceTest(
 const BERLIN_CENTER_TILES = [371506851, 371506850, 371506849, 371506848];
 
 createOMVDecoderPerformanceTest("theme=berlin tiles=4 region=berlin data=herebase", {
-    theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
+    theme: getTestResourceUrl("@xyzmaps/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: BERLIN_CENTER_TILES,
     omvRestClientOptions: {
         url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
@@ -208,7 +208,7 @@ createOMVDecoderPerformanceTest("theme=berlin tiles=4 region=berlin data=herebas
 });
 
 createOMVDecoderPerformanceTest("theme=berlin tiles=4 region=berlin data=osmbase", {
-    theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
+    theme: getTestResourceUrl("@xyzmaps/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: BERLIN_CENTER_TILES,
     omvRestClientOptions: {
         url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
@@ -230,7 +230,7 @@ const NEW_YORK_TILES = [
 ];
 
 createOMVDecoderPerformanceTest("theme=berlin tiles=10 region=ny data=herebase", {
-    theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
+    theme: getTestResourceUrl("@xyzmaps/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: NEW_YORK_TILES,
     omvRestClientOptions: {
         url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"
@@ -238,7 +238,7 @@ createOMVDecoderPerformanceTest("theme=berlin tiles=10 region=ny data=herebase",
 });
 
 createOMVDecoderPerformanceTest("theme=berlin tiles=10 region=ny data=osmbase", {
-    theme: getTestResourceUrl("@here/harp-map-theme", "resources/berlin_tilezen_base.json"),
+    theme: getTestResourceUrl("@xyzmaps/harp-map-theme", "resources/berlin_tilezen_base.json"),
     tiles: NEW_YORK_TILES,
     omvRestClientOptions: {
         url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf"

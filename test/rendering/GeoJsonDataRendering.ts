@@ -3,10 +3,10 @@
  * Licensed under Apache 2.0, see full license in LICENSE
  * SPDX-License-Identifier: Apache-2.0
  */
-import { Feature, FeatureCollection, Styles, Theme } from "@here/harp-datasource-protocol";
-import { clipLineString } from "@here/harp-geometry/lib/ClipLineString";
-import { wrapLineString } from "@here/harp-geometry/lib/WrapLineString";
-import { wrapPolygon } from "@here/harp-geometry/lib/WrapPolygon";
+import { Feature, FeatureCollection, Styles, Theme } from "@xyzmaps/harp-datasource-protocol";
+import { clipLineString } from "@xyzmaps/harp-geometry/lib/ClipLineString";
+import { wrapLineString } from "@xyzmaps/harp-geometry/lib/WrapLineString";
+import { wrapPolygon } from "@xyzmaps/harp-geometry/lib/WrapPolygon";
 import {
     EarthConstants,
     GeoBox,
@@ -15,9 +15,9 @@ import {
     TileKey,
     webMercatorProjection,
     webMercatorTilingScheme
-} from "@here/harp-geoutils";
-import { LookAtParams } from "@here/harp-mapview";
-import { DataProvider } from "@here/harp-mapview-decoder";
+} from "@xyzmaps/harp-geoutils";
+import { LookAtParams } from "@xyzmaps/harp-mapview";
+import { DataProvider } from "@xyzmaps/harp-mapview-decoder";
 import * as turf from "@turf/turf";
 import { Vector2, Vector3 } from "three";
 

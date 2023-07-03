@@ -23,10 +23,10 @@ function checkImports() {
     // first, read all package.json files and remember the dependencies
     const packageDependencies: { [moduleName: string]: any } = {};
     const packageConfigs: { [moduleName: string]: any } = {};
-    const packageJsonFiles = [...glob.sync(__dirname + "/../@here/*/package.json")];
+    const packageJsonFiles = [...glob.sync(__dirname + "/../@xyzmaps/*/package.json")];
 
     for (const packageJsonFile of packageJsonFiles) {
-        const moduleName = "@here/" + packageJsonFile.split(path.sep).slice(-2, -1)[0];
+        const moduleName = "@xyzmaps/" + packageJsonFile.split(path.sep).slice(-2, -1)[0];
         packageConfigs[moduleName] = JSON.parse(fs.readFileSync(packageJsonFile, "utf-8"));
     }
 
@@ -67,7 +67,7 @@ function checkImports() {
 
     // now, iterate all typescript source files
     const sourceFiles = glob
-        .sync(__dirname + "/../@here/**/*.ts")
+        .sync(__dirname + "/../@xyzmaps/**/*.ts")
         .filter(
             sourcePath =>
                 !sourcePath.includes("node_modules") && !sourcePath.includes("generator-harp.gl")
@@ -75,15 +75,15 @@ function checkImports() {
 
     // regular expression catching all imported modules
     const importRE = /(.*)?import\s*{[\s\S]*?}\s*from\s+["'](.*)["']/gi;
-    const environmentRE = /@here:check-imports:environment:(.*)/gi;
+    const environmentRE = /@xyzmaps:check-imports:environment:(.*)/gi;
 
     const errors = new Array<string>();
 
     for (const sourceFile of sourceFiles) {
         const contents = fs.readFileSync(sourceFile, "utf-8");
         let env = "browser";
-        const relativePath = path.relative(__dirname + "/../@here", sourceFile);
-        const moduleName = "@here/" + relativePath.split(path.sep)[0];
+        const relativePath = path.relative(__dirname + "/../@xyzmaps", sourceFile);
+        const moduleName = "@xyzmaps/" + relativePath.split(path.sep)[0];
         const modulePath = path.resolve(__dirname + "/../", moduleName);
 
         const environmentMatch = environmentRE.exec(contents);
@@ -91,7 +91,7 @@ function checkImports() {
             env = environmentMatch[1];
             if (env !== "browser" && env !== "node") {
                 errors.push(
-                    `Error: ${relativePath} unknown '@here:environment:' type: ${env}. Supported types: 'node', 'browser'`
+                    `Error: ${relativePath} unknown '@xyzmaps:environment:' type: ${env}. Supported types: 'node', 'browser'`
                 );
                 env = "browser";
             }
@@ -140,7 +140,7 @@ function checkImports() {
                 }
             }
 
-            // 3) Make sure we don't include other @here modules via relative paths
+            // 3) Make sure we don't include other @xyzmaps modules via relative paths
             if (importedModule.startsWith("..")) {
                 const resolvedImportedModule = path.resolve(
                     path.dirname(sourceFile),
@@ -166,7 +166,7 @@ function checkImports() {
         for (const moduleName in packageConfigs) {
             const dependencies = Object.keys(packageDependencies[moduleName]).filter(
                 dependencyName =>
-                    dependencyName.startsWith("@here/") && dependencyName !== moduleName
+                    dependencyName.startsWith("@xyzmaps/") && dependencyName !== moduleName
             );
 
             const module = {
