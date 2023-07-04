@@ -33,7 +33,6 @@
         "webpack-merge": "^5.9.0"
     },
     "scripts": {
-        "cleanup": "./scripts/cleanup.sh",
         "build": "npm run build-bundle && npm run build-examples",
         "start": "webpack serve --config @xyzmaps/harp-examples/webpack.config.js",
 
