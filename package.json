@@ -44,7 +44,7 @@
         "build-www": "cd www && yarn build",
         "start-www": "cd www && yarn start",
 
-        "typedoc": "typedoc --options typedoc.json",
+        "typedoc": "typedoc --options typedoc.json"
     },
     "engines": {
         "node": ">=18.0.0",
