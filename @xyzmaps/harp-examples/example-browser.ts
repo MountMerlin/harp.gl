@@ -261,6 +261,7 @@ function exampleBrowser(exampleDefinitions: ExampleDefinitions) {
     function createDomElement<T = HTMLElement>(name: string, options?: DomElementProps): T {
         const element = (document.createElement(name) as any) as T;
         if (options !== undefined) {
+            // @ts-ignore
             Object.assign(element, options);
         }
         return element;
