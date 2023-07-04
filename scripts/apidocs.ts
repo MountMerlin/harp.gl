@@ -47,6 +47,7 @@ async function main() {
     packages.forEach(packageName => {
         const packageJson = require(`${packageName}/package.json`) as any;
 
+        console.log(`-- yarn build ${packageName}`);
         console.log(
             execSync("yarn build", {
                 cwd: path.resolve(`${packageName}`)
