@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-atlas-tools",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Sprites and texture atlas generator for harp.gl maps",
     "main": "lib/index.js",
     "bin": {
@@ -21,8 +21,8 @@
         "directory": "@xyzmaps/harp-atlas-tools"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "keywords": [
@@ -37,7 +37,6 @@
     ],
     "dependencies": {
         "@types/mkpath": "^0.1.29",
-        "@types/sharp": "^0.32.0",
         "commander": "^5.1.0",
         "glob": "^7.1.4",
         "jimp": "^0.2.28",

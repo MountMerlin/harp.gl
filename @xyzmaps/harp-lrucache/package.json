@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-lrucache",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "LRU cache",
     "main": "index.js",
     "typings": "index",
@@ -18,12 +18,12 @@
         "directory": "@xyzmaps/harp-lrucache"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-utils": "^0.28.0"
+        "@xyzmaps/harp-utils": "^2.0.0"
     },
     "devDependencies": {
         "@types/chai": "^4.2.14",

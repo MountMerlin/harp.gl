@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-text-canvas",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "SDF based text rendering for TypeScript",
     "main": "index.js",
     "typings": "index",
@@ -15,16 +15,16 @@
         "directory": "@xyzmaps/harp-text-canvas"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-lrucache": "^0.28.0",
-        "@xyzmaps/harp-utils": "^0.28.0"
+        "@xyzmaps/harp-lrucache": "^2.0.0",
+        "@xyzmaps/harp-utils": "^2.0.0"
     },
     "devDependencies": {
-        "@xyzmaps/harp-test-utils": "^0.28.0",
+        "@xyzmaps/harp-test-utils": "^2.0.0",
         "@types/chai": "^4.2.14",
         "@types/mocha": "^8.2.0",
         "@types/node": "^14.0.5",

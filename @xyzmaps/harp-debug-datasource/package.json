@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-debug-datasource",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Overlay useful for debugging map data",
     "main": "index.js",
     "typings": "index",
@@ -17,15 +17,15 @@
         "directory": "@xyzmaps/harp-debug-datasource"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-geoutils": "^0.28.0",
-        "@xyzmaps/harp-lrucache": "^0.28.0",
-        "@xyzmaps/harp-mapview": "^0.28.0",
-        "@xyzmaps/harp-text-canvas": "^0.28.0"
+        "@xyzmaps/harp-geoutils": "^2.0.0",
+        "@xyzmaps/harp-lrucache": "^2.0.0",
+        "@xyzmaps/harp-mapview": "^2.0.0",
+        "@xyzmaps/harp-text-canvas": "^2.0.0"
     },
     "devDependencies": {
         "@types/chai": "^4.3.5",

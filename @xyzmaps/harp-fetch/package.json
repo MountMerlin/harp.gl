@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-fetch",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "This module adds a subset of the fetch API for Node.js",
     "main": "index.js",
     "browser": "index.web.js",
@@ -19,8 +19,8 @@
         "directory": "@xyzmaps/harp-fetch"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {

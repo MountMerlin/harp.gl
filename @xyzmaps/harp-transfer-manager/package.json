@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-transfer-manager",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Provides a manager that orchestrates downloading URLs, particularly static map resources.",
     "main": "index.js",
     "typings": "index",
@@ -19,12 +19,12 @@
         "directory": "@xyzmaps/harp-transfer-manager"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-fetch": "^0.28.0"
+        "@xyzmaps/harp-fetch": "^2.0.0"
     },
     "devDependencies": {
         "@types/chai": "^4.2.14",

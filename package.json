@@ -9,10 +9,8 @@
         "test/rendering"
     ],
     "devDependencies": {
-        "@ismarslomic/mermaid.cli": "^0.5.5",
         "@microsoft/api-documenter": "^7.22.22",
         "@microsoft/api-extractor": "^7.36.0",
-        "@strictsoftware/typedoc-plugin-monorepo": "^0.4.2",
         "@types/express": "^4.17.9",
         "@types/serve-static": "^1.15.2",
         "@types/fs-extra": "^9.0.7",
@@ -24,7 +22,6 @@
         "express": "^4.17.9",
         "fork-ts-checker-webpack-plugin": "^8.0.0",
         "fs-extra": "^9.0.7",
-        "geckodriver": "^4.0.4",
         "glob": "^10.3.1",
         "mkpath": "^1.0.0",
         "node-fetch": "3.3.1",
@@ -39,16 +36,15 @@
     },
     "scripts": {
         "cleanup": "./scripts/cleanup.sh",
-        "start": "webpack serve --config @xyzmaps/harp-examples/webpack.config.js",
         "build": "npm run build-bundle && npm run build-examples",
+        "start": "webpack serve --config @xyzmaps/harp-examples/webpack.config.js",
+
         "build-examples": "webpack --config @xyzmaps/harp-examples/webpack.config.js",
         "build-bundle": "cd @xyzmaps/harp.gl && webpack",
         "build-www": "cd www && yarn build",
         "start-www": "cd www && yarn start",
-        "typedoc": "ts-node ./scripts/setup-docs.ts && typedoc --options typedoc.json",
-        "typedoc2": "typedoc --options typedoc.json",
-        "docs": "ts-node ./scripts/apidocs.ts",
-        "postinstall": "yarn workspace @xyzmaps/harp-datasource-protocol generate-json-schema"
+
+        "typedoc": "typedoc --options typedoc.json",
     },
     "engines": {
         "node": ">=18.0.0",
@@ -61,8 +57,8 @@
     },
     "private": true,
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0"
 }

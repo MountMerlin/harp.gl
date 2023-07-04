@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-webtile-datasource",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "WebTile Data source",
     "main": "index.js",
     "typings": "index",
@@ -18,17 +18,17 @@
         "directory": "@xyzmaps/harp-webtile-datasource"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-datasource-protocol": "^0.28.0",
-        "@xyzmaps/harp-geometry": "^0.28.0",
-        "@xyzmaps/harp-geoutils": "^0.28.0",
-        "@xyzmaps/harp-lrucache": "^0.28.0",
-        "@xyzmaps/harp-mapview": "^0.28.0",
-        "@xyzmaps/harp-utils": "^0.28.0"
+        "@xyzmaps/harp-datasource-protocol": "^2.0.0",
+        "@xyzmaps/harp-geometry": "^2.0.0",
+        "@xyzmaps/harp-geoutils": "^2.0.0",
+        "@xyzmaps/harp-lrucache": "^2.0.0",
+        "@xyzmaps/harp-mapview": "^2.0.0",
+        "@xyzmaps/harp-utils": "^2.0.0"
     },
     "devDependencies": {
         "@types/chai": "^4.2.14",

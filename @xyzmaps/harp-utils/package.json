@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-utils",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Provides utilities: logging, debugging.",
     "main": "index.node.js",
     "browser": "index.js",
@@ -15,8 +15,8 @@
         "directory": "@xyzmaps/harp-utils"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "devDependencies": {

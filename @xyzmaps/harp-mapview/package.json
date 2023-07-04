@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-mapview",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Functionality needed to render a map.",
     "keywords": [
         "map",
@@ -27,25 +27,25 @@
         "directory": "@xyzmaps/harp-mapview"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-datasource-protocol": "^0.28.0",
-        "@xyzmaps/harp-fetch": "^0.28.0",
-        "@xyzmaps/harp-geometry": "^0.28.0",
-        "@xyzmaps/harp-geoutils": "^0.28.0",
-        "@xyzmaps/harp-lines": "^0.28.0",
-        "@xyzmaps/harp-lrucache": "^0.28.0",
-        "@xyzmaps/harp-materials": "^0.28.0",
-        "@xyzmaps/harp-text-canvas": "^0.28.0",
-        "@xyzmaps/harp-transfer-manager": "^0.28.0",
-        "@xyzmaps/harp-utils": "^0.28.0",
+        "@xyzmaps/harp-datasource-protocol": "^2.0.0",
+        "@xyzmaps/harp-fetch": "^2.0.0",
+        "@xyzmaps/harp-geometry": "^2.0.0",
+        "@xyzmaps/harp-geoutils": "^2.0.0",
+        "@xyzmaps/harp-lines": "^2.0.0",
+        "@xyzmaps/harp-lrucache": "^2.0.0",
+        "@xyzmaps/harp-materials": "^2.0.0",
+        "@xyzmaps/harp-text-canvas": "^2.0.0",
+        "@xyzmaps/harp-transfer-manager": "^2.0.0",
+        "@xyzmaps/harp-utils": "^2.0.0",
         "rbush": "^3.0.1"
     },
     "devDependencies": {
-        "@xyzmaps/harp-test-utils": "^0.28.0",
+        "@xyzmaps/harp-test-utils": "^2.0.0",
         "@types/chai": "^4.2.14",
         "@types/chai-as-promised": "^7.1.2",
         "@types/mocha": "^8.2.0",

@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-mapview-decoder",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Decoder worker for mapview",
     "main": "index.js",
     "typings": "index",
@@ -21,21 +21,21 @@
         "url": "https://github.com/xyzmaps/harp.gl.git"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-datasource-protocol": "^0.28.0",
-        "@xyzmaps/harp-fetch": "^0.28.0",
-        "@xyzmaps/harp-geoutils": "^0.28.0",
-        "@xyzmaps/harp-lrucache": "^0.28.0",
-        "@xyzmaps/harp-mapview": "^0.28.0",
-        "@xyzmaps/harp-utils": "^0.28.0",
+        "@xyzmaps/harp-datasource-protocol": "^2.0.0",
+        "@xyzmaps/harp-fetch": "^2.0.0",
+        "@xyzmaps/harp-geoutils": "^2.0.0",
+        "@xyzmaps/harp-lrucache": "^2.0.0",
+        "@xyzmaps/harp-mapview": "^2.0.0",
+        "@xyzmaps/harp-utils": "^2.0.0",
         "geojson-vt": "^3.2.1"
     },
     "devDependencies": {
-        "@xyzmaps/harp-test-utils": "^0.28.0",
+        "@xyzmaps/harp-test-utils": "^2.0.0",
         "@types/chai": "^4.2.14",
         "@types/chai-as-promised": "^7.1.2",
         "@types/mocha": "^8.2.0",

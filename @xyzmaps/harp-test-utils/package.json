@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-test-utils",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Provides utilities for tests",
     "main": "index.node.js",
     "browser": "index.web.js",
@@ -16,8 +16,8 @@
         "directory": "@xyzmaps/harp-test-utils"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
@@ -33,8 +33,8 @@
         "xml2js": "^0.4.23"
     },
     "devDependencies": {
-        "@xyzmaps/harp-fetch": "^0.28.0",
-        "@xyzmaps/harp-utils": "^0.28.0",
+        "@xyzmaps/harp-fetch": "^2.0.0",
+        "@xyzmaps/harp-utils": "^2.0.0",
         "@types/body-parser": "^1.19.0",
         "@types/chai": "^4.2.14",
         "@types/express": "^4.17.6",

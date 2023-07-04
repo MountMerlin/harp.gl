@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-omv-datasource",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "HERE OMV Data source",
     "main": "index.js",
     "typings": "index",
@@ -22,16 +22,16 @@
         "directory": "@xyzmaps/harp-omv-datasource"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-vectortile-datasource": "^0.28.0"
+        "@xyzmaps/harp-vectortile-datasource": "^2.0.0"
     },
     "devDependencies": {
-        "@xyzmaps/harp-fetch": "^0.28.0",
-        "@xyzmaps/harp-test-utils": "^0.28.0",
+        "@xyzmaps/harp-fetch": "^2.0.0",
+        "@xyzmaps/harp-test-utils": "^2.0.0",
         "@types/chai": "^4.2.14",
         "@types/earcut": "^2.1.1",
         "@types/long": "^4.0.1",

@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-theme-tools",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Tools for harp.gl-theme optimiziation.",
     "bin": {
         "harp-theme-optimizer": "lib/cli-build-theme.js"
@@ -17,8 +17,8 @@
         "directory": "@xyzmaps/harp-theme-tools"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "keywords": [
@@ -27,7 +27,7 @@
         "theme"
     ],
     "dependencies": {
-        "@xyzmaps/harp-mapview": "^0.28.0",
+        "@xyzmaps/harp-mapview": "^2.0.0",
         "commander": "^5.1.0",
         "glob": "^7.1.4",
         "path": "^0.12.7"

@@ -1,6 +1,6 @@
 {
     "name": "@xyzmaps/harp-map-controls",
-    "version": "0.28.0",
+    "version": "2.0.0",
     "description": "Camera controller which implements a common default set of camera functionality in a map context.",
     "main": "index.js",
     "typings": "index",
@@ -18,14 +18,14 @@
         "directory": "@xyzmaps/harp-map-controls"
     },
     "author": {
-        "name": "HERE Europe B.V.",
-        "url": "https://here.com"
+        "name": "XYZ maps contributors",
+        "url": "https://xyzmaps.org"
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "@xyzmaps/harp-geoutils": "^0.28.0",
-        "@xyzmaps/harp-mapview": "^0.28.0",
-        "@xyzmaps/harp-utils": "^0.28.0",
+        "@xyzmaps/harp-geoutils": "^2.0.0",
+        "@xyzmaps/harp-mapview": "^2.0.0",
+        "@xyzmaps/harp-utils": "^2.0.0",
         "@tweenjs/tween.js": "^18.6.4"
     },
     "devDependencies": {
