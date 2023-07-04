@@ -89,13 +89,13 @@
                 map.resize(window.innerWidth, window.innerHeight);
             });
 
-            const hereCopyrightInfo = {
-                id: "here.com",
+            const xyzCopyrightInfo = {
+                id: "xyzmaps.org",
                 year: new Date().getFullYear(),
-                label: "HERE",
-                link: "https://legal.here.com/terms"
+                label: "XYZ maps",
+                link: "https://legal.xyzmaps.org"
             };
-            const copyrights = [hereCopyrightInfo];
+            const copyrights = [xyzCopyrightInfo];
 
             const omvDataSource = new VectorTileDataSource({
                 url: "https://demo.xyzmaps.org/maps/osm/{z}/{x}/{y}.pbf",

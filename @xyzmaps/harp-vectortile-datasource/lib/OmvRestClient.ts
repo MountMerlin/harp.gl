@@ -20,7 +20,7 @@ interface QueryParameters {
 
 export enum APIFormat {
     /**
-     * Use the REST API format of HERE Vector Tiles Server component version 1.
+     * Use the REST API format of  Vector Tiles Server component version 1.
      *
      * @remarks
      * Documentation:

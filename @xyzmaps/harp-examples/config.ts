@@ -15,11 +15,5 @@ export const copyrightInfo = [
         year: new Date().getFullYear(),
         label: "XYZ Maps",
         link: "https://xyzmaps.org"
-    },
-    {
-        id: "here.com",
-        year: 2021,
-        label: "HERE",
-        link: "https://legal.here.com/terms"
     }
 ];

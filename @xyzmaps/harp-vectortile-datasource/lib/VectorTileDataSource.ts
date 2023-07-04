@@ -192,10 +192,10 @@ const hereVectorTileDefaultOptions: OmvWithRestClientParams = {
     },
     copyrightInfo: [
         {
-            id: "here.com",
+            id: "xyzmaps.org",
             year: new Date().getFullYear(),
-            label: "HERE",
-            link: "https://legal.here.com/terms"
+            label: "XYZ maps",
+            link: "https://legal.xyzmaps.org"
         }
     ]
 };
