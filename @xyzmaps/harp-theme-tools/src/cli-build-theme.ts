@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 /*
+ * Copyright (C) 2023-     XYZ maps contributors
  * Copyright (C) 2020-2021 HERE Europe B.V.
  * Licensed under Apache 2.0, see full license in LICENSE
  * SPDX-License-Identifier: Apache-2.0

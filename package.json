@@ -78,7 +78,6 @@
         "start-tests": "webpack serve --config ./webpack.tests.config.js",
         "test-browser": "yarn karma-browser",
         "build-tests": "webpack --config ./webpack.tests.config.js",
-        "run-rendering-tests": "./scripts/rendering-tests-reference-platform.sh",
         "save-reference-rendering-tests": "npx ts-node @xyzmaps/harp-test-utils/lib/rendering/RenderingTestResultCli.ts save-reference",
         "approve-reference-rendering-tests": "npx ts-node @xyzmaps/harp-test-utils/lib/rendering/RenderingTestResultCli.ts approve",
         "typedoc": "ts-node ./scripts/setup-docs.ts && typedoc --options typedoc.json",
@@ -89,7 +88,6 @@
         "eslint": "eslint --ext .ts @xyzmaps test scripts",
         "eslint:fix": "eslint --fix --ext .ts @xyzmaps test scripts",
         "postinstall": "yarn workspace @xyzmaps/harp-datasource-protocol generate-json-schema",
-        "prepare-doc-deploy": "ts-node ./scripts/prepare_doc_deploy.ts",
         "karma-headless": "karma start --browsers ChromeHeadless",
         "karma-headless-firefox": "karma start --browsers FirefoxHeadless",
         "karma-browser": "karma start --browsers Chrome --no-single-run"
