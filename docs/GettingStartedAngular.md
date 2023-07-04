@@ -1,6 +1,6 @@
 This getting started guide explains how to create an Angular application and add a map component that will use harp to render the map.
 If you already have an existing Angular application you can skip the first step and directly go to (#add-harp)
-The final application can be found [here](https://github.com/heremaps/harp.gl/tree/master/docs/angular-harp)
+The final application can be found [here](https://github.com/xyzmaps/harp.gl/tree/master/docs/angular-harp)
 
 ## Create Angular application
 

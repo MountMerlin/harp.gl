@@ -100,6 +100,7 @@ describe("MapView Picking", async function () {
         }
 
         // fake texture loading
+        // @ts-ignore
         sandbox.stub(FontCatalog as any, "loadTexture").callsFake((url: URL) => {
             return {
                 image: {

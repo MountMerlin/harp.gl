@@ -28,7 +28,7 @@ describe("PerformanceTimer", function () {
                 try {
                     const r = test();
                     resolve(r);
-                } catch (error) {
+                } catch (error: any) {
                     if (error.constructor.name === "AssertionError") {
                         setTimeout(iteration, 1);
                     } else {

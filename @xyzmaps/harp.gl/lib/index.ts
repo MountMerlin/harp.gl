@@ -10,7 +10,7 @@ if (!(window as any).THREE) {
     // eslint-disable-next-line no-console
     console.warn(
         "harp.js: It looks like 'three.js' is not loaded. This script requires 'THREE' object to " +
-            "be defined. See https://github.com/heremaps/harp.gl/@xyzmaps/harp.gl."
+            "be defined. See https://github.com/xyzmaps/harp.gl/@xyzmaps/harp.gl."
     );
 }
 

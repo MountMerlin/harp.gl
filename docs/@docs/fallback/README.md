@@ -93,7 +93,7 @@ In order to understand the sequence diagram a bit better, please note the follow
 The following list shows some of the details involved in the implementation of the fallback
 
 -   Each [Tile] includes a hidden [levelOffset], this is an integer which shows which level offset the tile has to the current [MapView] zoom level. A [Tile] that has a non zero [levelOffset] is a fallback tile. It is used to offset the render order correctly.
--   Each [TileObject] in each [Tile] needs to [backup the render order](https://github.com/heremaps/harp.gl/blob/0788d89/@xyzmaps/harp-mapview/lib/Tile.ts#L39), this is because during fallback, the objects [renderOrder] is adjusted based on what [levelOffset] it has, see how it is calculated [here](https://github.com/heremaps/harp.gl/blob/0788d89/@xyzmaps/harp-mapview/lib/MapView.ts#L3556). We need to reset it when the [Tile] is rendered normally (i.e. it isn't a fallback helper).
+-   Each [TileObject] in each [Tile] needs to [backup the render order](https://github.com/xyzmaps/harp.gl/blob/0788d89/@xyzmaps/harp-mapview/lib/Tile.ts#L39), this is because during fallback, the objects [renderOrder] is adjusted based on what [levelOffset] it has, see how it is calculated [here](https://github.com/xyzmaps/harp.gl/blob/0788d89/@xyzmaps/harp-mapview/lib/MapView.ts#L3556). We need to reset it when the [Tile] is rendered normally (i.e. it isn't a fallback helper).
 -   The [DataSource] has a property [addGroundPlane] which dictates if the [Tile] needs geometry (i.e. a background opaque plane) to hide lower level [Tile]s from showing through and causing artifacts.
 
 ## Test cases
@@ -115,7 +115,7 @@ There are IBCT tests which are availabel internally in the @xyzmaps/integration-
 [cambridge dictionary]: https://dictionary.cambridge.org/dictionary/english/fallback
 [tileobject]: https://threejs.xyzmaps.org/docs/master/doc/modules/harp_mapview.html#tileobject-1
 [renderorder]: https://threejs.org/docs/#api/en/core/Object3D.renderOrder
-[leveloffset]: https://github.com/heremaps/harp.gl/blob/0788d89/@xyzmaps/harp-mapview/lib/Tile.ts#L253
+[leveloffset]: https://github.com/xyzmaps/harp.gl/blob/0788d89/@xyzmaps/harp-mapview/lib/Tile.ts#L253
 [addgroundplane]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_mapview.datasource-1.html#addgroundplane
 [harp-7856]: https://saeljira.it.here.com/browse/HARP-7856
 [tilekey]: https://threejs.xyzmaps.org/docs/master/doc/classes/harp_geoutils.tilekey-1.html

@@ -1,7 +1,7 @@
 {
     "name": "harp.gl",
-    "mode": "modules",
-    "module": "commonjs",
+    "entryPoints": ["."],
+    "entryPointStrategy": "expand",
     "out": "dist/doc",
     "exclude": [
         "**/node_modules/**",
@@ -16,9 +16,6 @@
     "includes": "dist/doc-snippets",
     "media": "dist/media",
     "readme": "README.md",
-    "target": "ES6",
-    "excludePrivate": "true",
-    "excludeExternals": "true",
-    "excludeNotExported": "true",
-    "external-modulemap": ".*/(?:@xyzmaps|docs)/(@docs/[\\w\\-_]+|[\\w\\-_]+)/"
+    "excludePrivate": true,
+    "excludeExternals": true,
 }

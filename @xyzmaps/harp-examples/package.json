@@ -70,7 +70,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@turf/turf": "^5.1.6"
+        "@turf/turf": "^6.5.0"
     },
     "private": true
 }

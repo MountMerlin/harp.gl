@@ -104,6 +104,7 @@ export class PoiInfoBuilder {
     }
 
     withImageItem(): PoiInfoBuilder {
+        // @ts-ignore
         this.m_imageItem = new ImageItem("dummy", {
             height: this.m_height,
             width: this.m_width,

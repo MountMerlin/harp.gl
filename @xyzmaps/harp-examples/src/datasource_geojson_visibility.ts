@@ -60,6 +60,7 @@ export namespace GeoJsonVisibilityExample {
 
         const dataProvider = new GeoJsonDataProvider(
             "geojson",
+            // @ts-ignore
             turf.featureCollection([circle, ...points.features]) as FeatureCollection,
             { tiler: new GeoJsonTiler() }
         );
@@ -108,6 +109,7 @@ export namespace GeoJsonVisibilityExample {
             });
 
             dataProvider.updateInput(
+                // @ts-ignore
                 turf.featureCollection([circle, ...points.features]) as FeatureCollection
             );
         };

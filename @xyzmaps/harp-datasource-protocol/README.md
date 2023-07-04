@@ -23,7 +23,7 @@ The supported techniques that can be used to draw on the map are:
 -   Terrain: [[TerrainTechnique]]
 -   Shader: [[ShaderTechnique]]
 
-All the techniques are documented in the [`Techniques` class' source code](https://github.com/heremaps/harp.gl/blob/master/%40here/harp-datasource-protocol/lib/Techniques.ts).
+All the techniques are documented in the [`Techniques` class' source code](https://github.com/xyzmaps/harp.gl/blob/master/%40here/harp-datasource-protocol/lib/Techniques.ts).
 
 To set a technique in a theme file, you can use a `technique` property. See examples below.
 
@@ -162,7 +162,7 @@ the above condition would match _roads_ `$layer` and the `kind` of **rail**
 
 the above condition would match all `kind`s which are **not** _rail_ on the _roads_ `$layer`
 
-For more in-depth details about the equality operators check the [@xyzmaps/harp-datasource-protocol/lib/Theme.ts](https://github.com/heremaps/harp.gl/blob/master/%40here/harp-datasource-protocol/lib/Theme.ts).
+For more in-depth details about the equality operators check the [@xyzmaps/harp-datasource-protocol/lib/Theme.ts](https://github.com/xyzmaps/harp.gl/blob/master/%40here/harp-datasource-protocol/lib/Theme.ts).
 
 Additionally there are two more operators available (`has` and `in`):
 
@@ -216,7 +216,7 @@ example:
     ]
 ```
 
-A list of possible style modifier for each techniques can be found in the [`Techniques` class' source code](https://github.com/heremaps/harp.gl/blob/master/%40here/harp-datasource-protocol/lib/Techniques.ts).
+A list of possible style modifier for each techniques can be found in the [`Techniques` class' source code](https://github.com/xyzmaps/harp.gl/blob/master/%40here/harp-datasource-protocol/lib/Techniques.ts).
 
 Most common properties include:
 

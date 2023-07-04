@@ -80,9 +80,9 @@ import { CUSTOM_DECODER_SERVICE_TYPE } from "../decoder/custom_decoder_defs";
  * [[include:custom_datasource_example_map_view_decoder_bundle.ts]]
  * ```
  * By default the url of the decoder bundle is "decoder.bundle.js" and is generated out of
- * {@link https://github.com/heremaps/harp.gl/blob/master/%40here/harp-examples/decoder/decoder.ts|decoder.ts}
+ * {@link https://github.com/xyzmaps/harp.gl/blob/master/%40here/harp-examples/decoder/decoder.ts|decoder.ts}
  * (Assuming you created your app with the
- * {@link https://github.com/heremaps/harp.gl/blob/master/docs/GettingStartedGuide.md#yeoman|Yeoman generator}).
+ * {@link https://github.com/xyzmaps/harp.gl/blob/master/docs/GettingStartedGuide.md#yeoman|Yeoman generator}).
  *
  * The [[CustomDecoder]] has to be registered in the [[WorkerServiceManager]] during the
  * initialization of the decoder bundle. This is done in [[CustomDecoderService.start]]

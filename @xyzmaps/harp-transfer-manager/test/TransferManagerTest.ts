@@ -58,7 +58,7 @@ describe("TransferManager", function () {
         // Act
         try {
             await downloadMgr.download(fakeDataUrl);
-        } catch (err) {
+        } catch (err: any) {
             // Assert
             assert(fetchStub.called);
             assert(fetchStub.callCount === 1);
@@ -114,6 +114,7 @@ describe("TransferManager", function () {
             assert(fetchStub.callCount === 1);
             assert(fetchStub.getCall(0).args[0] === fakeDataUrl);
             assert.isDefined(err);
+            // @ts-ignore
             assert.equal(err.message, "Dummy error");
         }
     });

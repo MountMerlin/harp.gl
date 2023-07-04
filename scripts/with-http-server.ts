@@ -74,6 +74,7 @@ server.listen(port, () => {
 
     child.on("close", code => {
         console.log(`with-http-server: child process exited with code ${code}`);
+        // @ts-ignore
         process.exit(code);
     });
 });

@@ -218,6 +218,7 @@ describe("WorkerLoader", function () {
 
                 const originalFetch = fetch;
                 const fetchStub = sandbox.stub(window, "fetch");
+                // @ts-ignore
                 fetchStub.callsFake(async (url: RequestInfo) => {
                     assert.equal(url, cspTestScriptUrl);
                     return await originalFetch(testWorkerUrl);
@@ -239,6 +240,7 @@ describe("WorkerLoader", function () {
                     assert.isTrue(fetchStub.calledOnce);
                     assert.equal(workerConstructorStub.callCount, 2);
                     assert.equal(workerConstructorStub.firstCall.args[0], cspTestScriptUrl);
+                    // @ts-ignore
                     assert(workerConstructorStub.secondCall.args[0].startsWith, "blob:");
                 });
             });
@@ -265,6 +267,7 @@ describe("WorkerLoader", function () {
 
                 const originalFetch = fetch;
                 const fetchStub = sandbox.stub(window, "fetch");
+                // @ts-ignore
                 fetchStub.callsFake(async (url: RequestInfo) => {
                     assert.equal(url, cspTestScriptUrl);
                     return await originalFetch(testWorkerUrl);
@@ -286,6 +289,7 @@ describe("WorkerLoader", function () {
                     assert.isTrue(fetchStub.calledOnce);
                     assert.equal(workerConstructorStub.callCount, 2);
                     assert.equal(workerConstructorStub.firstCall.args[0], cspTestScriptUrl);
+                    // @ts-ignore
                     assert(workerConstructorStub.secondCall.args[0].startsWith, "blob:");
                 });
             });
