@@ -1,10 +1,12 @@
 :root {
    --dark-text: #3f454d;
+   --light-text: #D3E2F6;
+
    --section-padding: 100px 0;
    --background: #1b222c;
-   --gradient: linear-gradient(to bottom right,#e7e1a0,#85e0ce);
+   --gradient: linear-gradient(to bottom right,#00B6C8,#0D57D4);
    --grid-gap: 50px;
-   --teal: #58d7be;
+   --teal: #0694DF;
    --header-height: 500px;
  }
 
@@ -185,7 +187,7 @@ nav .nav-item {
    display: inline-block;
    padding: 12px 30px;
    background: var(--gradient);
-   color: var(--dark0-text);
+   color: var(--light-text);
    font-family: 'Fira Sans', sans-serif;
    font-size: 14px;
    line-height: 16px;

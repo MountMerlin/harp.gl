@@ -580,7 +580,7 @@
                 "when": "$layer ^= 'buildings' && ($geometryType ^= 'polygon')",
                 "technique": "extruded-polygon",
                 "attr": {
-                    "color": "#95DFCC",
+                    "color": "#3F7DE7",
                     "opacity": 0.85,
                     "defaultHeight": 1,
                     "roughness": 1,
@@ -590,7 +590,7 @@
                     "footprint": true,
                     "maxSlope": 0.8799999999999999,
                     "lineWidth": 1,
-                    "lineColor": "#95DFCC",
+                    "lineColor": "#C8DCFD",
                     "lineColorMix": 0.3,
                     "fadeNear": 0.1,
                     "fadeFar": 0.25,

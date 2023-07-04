@@ -107,15 +107,6 @@ const mainConfig = merge(commonConfig, {
                     from: "./resources/",
                     to: "resources",
                     toType: "dir"
-                },
-                {
-                    from: "package.json", // dummy path, we ignore input anyway
-                    to: "releases.json",
-                    transform: () => {
-                        return fetch("https://s3.amazonaws.com/harp.gl/releases.json").then(res => {
-                            return res.text();
-                        });
-                    }
                 }
             ]
         })

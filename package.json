@@ -4,9 +4,7 @@
     "description": "Map renderer based on three.js providing an open-source 3D map rendering engine.",
     "workspaces": [
         "@xyzmaps/*",
-        "www/",
-        "test/performance",
-        "test/rendering"
+        "www/"
     ],
     "devDependencies": {
         "@microsoft/api-documenter": "^7.22.22",
