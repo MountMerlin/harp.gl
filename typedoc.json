@@ -10,7 +10,6 @@
         "**/www/**/*.ts",
         "**/dist/**/*.ts",
         "**/scripts/*.ts",
-        "**/@xyzmaps/generator-harp.gl/**/*.ts",
         "**/+(*Test.ts|index_node.ts|index-worker.ts|*_generated.ts|publish-npm.ts|changelog.ts|doc-snippets.ts)"
     ],
     "includes": "dist/doc-snippets",
