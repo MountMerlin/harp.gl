@@ -16,3 +16,4 @@ rendering-test-results/
 /temp/
 lerna-debug.log
 yarn-error.log
+yarn.lock
