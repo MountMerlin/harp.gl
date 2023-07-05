@@ -14,4 +14,5 @@ clean:
 # kill node_packages and yarn.lock
 nuke: clean
 	rm -rf yarn.lock
-	find . -maxdepth 3 -type d -name node_modules -exec rm -rf {} \;
+	rm -rf ./node_modules
+	find ./@xyzmaps -maxdepth 2 -type d -name node_modules -exec rm -rf {} \;

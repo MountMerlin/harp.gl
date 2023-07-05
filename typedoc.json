@@ -1,7 +1,7 @@
 {
-    "name": "harp.gl",
-    "entryPoints": ["."],
-    "entryPointStrategy": "expand",
+    "name": "xyz:three.js",
+    "entryPoints": ["@xyzmaps/harp-mapview"],
+    "entryPointStrategy": "resolve",
     "out": "dist/doc",
     "exclude": [
         "**/node_modules/**",
@@ -16,5 +16,5 @@
     "media": "dist/media",
     "readme": "README.md",
     "excludePrivate": true,
-    "excludeExternals": true,
+    "excludeExternals": true
 }
