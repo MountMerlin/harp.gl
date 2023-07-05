@@ -41,8 +41,6 @@ function exampleBrowser(exampleDefinitions: ExampleDefinitions) {
     installHamburgerHandler();
     populateExamplesMenu();
 
-    installFilter(document.getElementById("filterInput") as HTMLInputElement);
-
     function installHamburgerHandler() {
         const expandButton = document.getElementById("hamburgerMenu") as HTMLAnchorElement;
         const closeButton = document.getElementById("closeButton") as HTMLButtonElement;
@@ -136,34 +134,6 @@ function exampleBrowser(exampleDefinitions: ExampleDefinitions) {
         });
         (document.getElementById("filterInput") as HTMLInputElement).value = "";
         isSearching = false;
-    }
-
-    function installFilter(filterInput: HTMLInputElement) {
-        filterInput.addEventListener("input", e => {
-            const filterValue = (filterInput.value || "").trim();
-
-            if (filterValue.length > 0 && !isSearching) {
-                goInSearchMode();
-            }
-
-            if (filterValue.length === 0 && isSearching) {
-                leaveSearchMode();
-            }
-
-            for (const element of elements) {
-                const text = element.textContent;
-                if (text === null) {
-                    continue;
-                }
-                const matches = filterValue === "" || text.includes(filterValue.toLowerCase());
-                if (matches) {
-                    element.classList.remove("filtered");
-                } else {
-                    element.classList.add("filtered");
-                }
-            }
-        });
-        document.getElementById("clearFilterButton")!.addEventListener("click", leaveSearchMode);
     }
 
     /**

@@ -42,7 +42,7 @@
                 height: 100%;
                 font-size: 17px;
                 line-height: 18px;
-                font-family: 'Fira Sans', sans-serif;
+                font-family: 'Inter', sans-serif;
             }
 
             a {
@@ -163,10 +163,10 @@
                 padding-bottom: calc(var(--margin) + 19px);
                 overflow: auto;
                 position: absolute;
-                top: calc(2 * var(--headers-height));
-                bottom: 0;
+                top: calc( var(--headers-height) - 10px);
+                bottom: 20px;
                 width: 100%;
-                height: calc(100% - 3 * var(--headers-height));
+                height: calc(100% - var(--headers-height));
             }
 
             #exampleList div {
@@ -252,57 +252,6 @@
                 margin: 0;
             }
 
-            #filterInput {
-                background: hsl(var(--color1-hue), var(--color1-saturation), var(--bright));
-                width: 100%;
-                box-sizing: border-box;
-                padding: calc(var(--margin) + 7px) 50px calc(var(--margin) + 7px) var(--margin);
-                color: hsl(var(--color1-hue), var(--color1-saturation), var(--dark));
-                font-family: inherit;
-                font-size: 17px;
-                outline: none;
-                border: none;
-            }
-
-            #filterInput:focus+#magnifier-placeholder {
-                display: none;
-            }
-
-            #magnifier-placeholder {
-                position: absolute;
-                top: 22px;
-                left: calc(var(--margin) + 2px);
-                pointer-events: none;
-                font-size: 25px;
-                color: hsl(var(--color1-hue), var(--color1-saturation), var(--dark));
-            }
-
-            #clearFilterButton {
-                text-decoration: none;
-                position: absolute;
-                right: var(--margin);
-                top: 50%;
-                padding: 0;
-                margin-top: -8px;
-                height: 16px;
-                font-size: 30px;
-                color: hsl(var(--color1-hue), var(--color1-saturation), var(--dark));
-                text-align: center;
-                line-height: 0;
-                background: none;
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
-
-            #clearFilterButton:hover {
-                opacity: 1;
-            }
-
-            /*
-            * Mobile / Responsive support
-            */
-
             #hamburgerMenu {
                 position: absolute;
                 background: hsl(var(--color1-hue), var(--color1-saturation), var(--dark));
@@ -385,20 +334,10 @@
                 <div style="clear:both"></div>
             </div>
 
-            <div class="filterBlock">
-                <input type="text" id="filterInput">
-                <svg id=magnifier-placeholder viewBox="30 30 110 110" width=20 height=20>
-                    <circle style="stroke-width:15;fill:none;stroke:#252c36;" cx="75" cy="75"
-                        r="35" />
-                    <path style="fill:none;stroke:#252c36;stroke-width:15;" d="m 100,100 35,35" />
-                </svg>
-                </input>
-                <button href="#" id="clearFilterButton" style="display:none;">&#215;</button>
-            </div>
             <div id="exampleList"></div>
         </div>
 
-        <iframe id="exampleFrame" allowfullscreen allowvr onmousewheel=""></iframe>
+        <iframe id="exampleFrame" allowfullscreen></iframe>
         <button id="viewSource" title="View the source code" href=# style="display:none;">
             <p>&#60;/&#62;</p>
         </button>
