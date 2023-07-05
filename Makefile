@@ -5,6 +5,7 @@ build: clean
 	yarn install
 	yarn run build
 	yarn run build-www
+	yarn run typedoc
 
 # clean dist directories
 clean:

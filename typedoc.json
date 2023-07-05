@@ -2,7 +2,7 @@
     "name": "xyz:three.js",
     "entryPoints": ["@xyzmaps/harp-mapview"],
     "entryPointStrategy": "resolve",
-    "out": "dist/doc",
+    "out": "dist/examples/docs",
     "exclude": [
         "**/node_modules/**",
         "**/@xyzmaps/harp.gl/lib/*.ts",
