@@ -13,12 +13,8 @@
         "harpgl"
     ],
     "scripts": {
-        "test": "exit 0",
-        "prebuild": "node scripts/postinstall.js",
         "build": "webpack",
-        "start": "webpack serve",
-        "publish-html": "node scripts/publish-html.js",
-        "prepare": "node scripts/postinstall.js && cross-env PREPARE_ONLY=true NODE_ENV=production webpack"
+        "start": "webpack serve"
     },
     "author": {
         "name": "XYZ maps contributors",
