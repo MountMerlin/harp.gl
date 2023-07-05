@@ -36,8 +36,8 @@
         "build": "npm run build-bundle && npm run build-examples",
         "start": "webpack serve --config @xyzmaps/harp-examples/webpack.config.js",
 
-        "build-examples": "webpack -p --config @xyzmaps/harp-examples/webpack.config.js",
-        "build-bundle": "cd @xyzmaps/harp.gl && webpack -p",
+        "build-examples": "webpack --config @xyzmaps/harp-examples/webpack.config.js",
+        "build-bundle": "cd @xyzmaps/harp.gl && webpack",
         "build-www": "cd www && yarn build",
         "start-www": "cd www && yarn start",
 
