@@ -6,8 +6,6 @@
         <meta charset="utf-8" />
         <meta name="viewport"
             content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:normal,bold&amp;display=swap"
-            rel="stylesheet">
         <style>
             :root {
                 /* COLOURS */
@@ -16,7 +14,7 @@
                 --color1-saturation: 17%;
 
                 /* Graceful gradients. */
-                --gradient: linear-gradient(to bottom right, #e7e1a0, #85e0ce);
+                --gradient: linear-gradient(to bottom right,#00B6C8,#0D57D4);
 
                 /* Luminosity shades */
                 --dark: 18%;
@@ -227,7 +225,7 @@
                 padding: 0 0 1px 1px;
                 user-select: none;
                 position: absolute;
-                bottom: 0;
+                bottom: 10px;
                 right: 0;
                 margin: var(--margin);
                 background: var(--gradient);
@@ -404,6 +402,7 @@
         <button id="viewSource" title="View the source code" href=# style="display:none;">
             <p>&#60;/&#62;</p>
         </button>
+        <div style="position: absolute;bottom: 0px;right: 10px;font-size: x-small;color: #fff"> map data (c) OSM contributors, Natural Earth and NASA</div>
 
         <script src="example-definitions.js"></script>
         <script src="example-browser.bundle.js"></script>

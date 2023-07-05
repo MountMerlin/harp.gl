@@ -179,7 +179,6 @@ export namespace GeoJsonExample {
 
     function getExampleHTML(): string {
         return `
-            <link href="https://fonts.googleapis.com/css?family=Fira+Sans&amp;display=swap" rel="stylesheet">
             <style>
                 :root{
                     --editor-width:${editorWidth};
