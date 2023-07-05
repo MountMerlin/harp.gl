@@ -31,7 +31,7 @@
     },
     "license": "Apache-2.0",
     "dependencies": {
-        "three": "^0.129.0"
+        "three": "^0.135.0"
     },
     "devDependencies": {
         "@xyzmaps/harp-datasource-protocol": "^2.0.0",

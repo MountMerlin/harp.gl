@@ -54,7 +54,7 @@
         "stats.js": "^0.17.0",
         "style-loader": "^2.0.0",
         "suncalc": "^1.8.0",
-        "three": "^0.129.0",
+        "three": "^0.135.0",
         "ts-loader": "^9.4.4",
         "typescript": "^5.1.6",
         "webpack": "5.65.0",

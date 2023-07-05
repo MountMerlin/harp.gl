@@ -32,12 +32,12 @@
         "@types/offscreencanvas": "^2019.6.4",
         "cross-env": "^7.0.2",
         "source-map-support": "^0.5.19",
-        "three": "^0.129.0",
+        "three": "^0.135.0",
         "typescript": "^5.1.6",
         "typescript-json-schema": "^0.58.1"
     },
     "peerDependencies": {
-        "three": "^0.129.0"
+        "three": "^0.135.0"
     },
     "publishConfig": {
         "access": "public"
