@@ -1,4 +1,4 @@
-.PHONY: build clean nuke
+.PHONY: build clean dev nuke
 
 # build assets
 build: clean
@@ -6,6 +6,10 @@ build: clean
 	yarn run build
 	yarn run build-www
 	yarn run typedoc
+
+dev:
+	yarn run start
+
 
 # clean dist directories
 clean:

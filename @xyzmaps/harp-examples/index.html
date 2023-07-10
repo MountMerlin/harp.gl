@@ -12,7 +12,8 @@
                 /* Color1: background color. */
                 --color1-hue: 218;
                 --color1-saturation: 17%;
-
+                --color2-hue: 218;
+                --color2-saturation: 25%;
                 /* Graceful gradients. */
                 --gradient: linear-gradient(to bottom right,#00B6C8,#0D57D4);
 
@@ -160,13 +161,11 @@
             */
             #exampleList {
                 padding: calc(var(--margin) + 19px) 0;
-                padding-bottom: calc(var(--margin) + 19px);
                 overflow: auto;
                 position: absolute;
                 top: calc( var(--headers-height) - 10px);
-                bottom: 20px;
+                height: calc(100% - var(--headers-height)*2) ;
                 width: 100%;
-                height: calc(100% - var(--headers-height));
             }
 
             #exampleList div {
